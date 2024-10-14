@@ -8,7 +8,7 @@ const About = () => {
       id="about"
       className="mx-auto mt-[-150px] w-full bg-gray-50 p-8 py-[250px]"
     >
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-8 lg:flex-row lg:gap-28">
+      <div className="mx-auto flex max-w-7xl flex-col-reverse items-center justify-center gap-8 lg:flex-row lg:gap-28">
         <div className="mb-6 max-w-lg md:mb-0">
           <h2 className="mb-12 text-center text-4xl font-bold italic text-teal-600 md:text-left">
             Zašto odabrati DriveTeam?
