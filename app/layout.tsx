@@ -35,7 +35,7 @@ export default function RootLayout({
       }}
     >
       <html lang="en">
-        <body className={`${inter.variable} antialiased`}>
+        <body className={`${inter.variable} bg-teal-700 antialiased`}>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
