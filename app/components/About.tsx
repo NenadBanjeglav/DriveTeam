@@ -38,15 +38,16 @@ const About = () => {
             promeniti život. Zajedno ćemo osvojiti puteve i uživati u svakom
             trenutku!
           </p>
-          <div className="flex flex-col justify-center mt-8">
+          <div className="flex flex-col justify-center items-end mt-8">
             <Image
               src="/signiture.png"
               alt="CEO signiture"
               width={200}
               height={100}
+              className="mr-2"
             />
             <p className="text-sm text-muted-foreground">
-              Boris Gadzic - Direktor
+              Boris Gadzic - Direktor i instruktor
             </p>
           </div>
 
@@ -57,10 +58,10 @@ const About = () => {
 
         <div className=" w-full ">
           <Image
-            src="/about.jpg"
+            src="/ceo.jpg"
             width={600}
             height={600}
-            alt="Instruktor i ucenik voze auto"
+            alt="Slika direktora"
             className="rounded-2xl object-cover shadow-2xl"
           />
         </div>
