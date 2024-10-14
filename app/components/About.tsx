@@ -38,6 +38,18 @@ const About = () => {
             promeniti život. Zajedno ćemo osvojiti puteve i uživati u svakom
             trenutku!
           </p>
+          <div className="flex flex-col justify-center mt-8">
+            <Image
+              src="/signiture.png"
+              alt="CEO signiture"
+              width={200}
+              height={100}
+            />
+            <p className="text-sm text-muted-foreground">
+              Boris Gadzic - Direktor
+            </p>
+          </div>
+
           <Button className="mt-12 w-full rounded-full bg-teal-600 hover:bg-teal-500">
             Rezervisi svoje mesto
           </Button>
