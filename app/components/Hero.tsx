@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const HeroSection = () => {
   const headline =
@@ -10,8 +11,9 @@ const HeroSection = () => {
 
   return (
     <header
-      className="flex h-[calc(100vh-100px)] items-center justify-center bg-teal-50 bg-[url('/hero.jpg')] bg-cover bg-center"
-      style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 91%)" }}
+      id="home"
+      className="mb-12 mt-[-150px] flex h-screen items-center justify-center bg-teal-50 bg-[url('/hero.jpg')] bg-cover bg-center pt-[150px]"
+      style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 90%)" }}
     >
       <div className="w-full rounded bg-black/50 p-6 text-center text-white shadow-lg">
         <h1 className="mb-4 text-3xl font-bold leading-tight md:text-5xl">
@@ -24,7 +26,7 @@ const HeroSection = () => {
                 delay: i / 5,
               }}
               key={i}
-              className={el === "DriveTeam" ? "text-teal-500" : ""}
+              className={el === "DriveTeam" ? "italic text-teal-500" : ""}
             >
               {el}
               {i === 5 ? <br /> : " "}
@@ -36,8 +38,11 @@ const HeroSection = () => {
         </p>
 
         <div className="flex flex-col justify-center space-x-0 md:flex-row md:space-x-4">
-          <Button className="mb-2 rounded-full border border-gray-300 bg-transparent text-white hover:bg-gray-100 hover:text-black md:mb-0">
-            Saznaj više
+          <Button
+            asChild
+            className="mb-2 rounded-full border border-gray-300 bg-transparent text-white hover:bg-gray-100 hover:text-black md:mb-0"
+          >
+            <Link href="#about">Saznaj više</Link>
           </Button>
           <Button className="rounded-full bg-teal-600 hover:bg-teal-500">
             Prijavi se odmah

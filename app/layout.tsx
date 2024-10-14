@@ -34,8 +34,10 @@ export default function RootLayout({
         },
       }}
     >
-      <html lang="en">
-        <body className={`${inter.variable} bg-teal-700 antialiased`}>
+      <html lang="en" style={{ scrollBehavior: "smooth" }}>
+        <body
+          className={`${inter.variable} no-scrollbar bg-gray-50 antialiased`}
+        >
           <ThemeProvider
             attribute="class"
             defaultTheme="system"

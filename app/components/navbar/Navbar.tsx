@@ -46,6 +46,7 @@ const Navbar = () => {
         <div className="hidden sm:flex sm:items-center sm:justify-around sm:gap-2 md:gap-4 lg:gap-8">
           {navbarLinks.map((el) => (
             <Link
+              scroll={true}
               key={el.href}
               href={el.href}
               className={cn(
