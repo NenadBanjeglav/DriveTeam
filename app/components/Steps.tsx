@@ -16,7 +16,7 @@ const Steps = () => {
     <section
       id="steps"
       className="mt-[-150px] bg-teal-100/50 p-8 pt-[200px]"
-      style={{ clipPath: "polygon(0 10%, 100% 0, 100% 100%, 0% 100%)" }}
+      style={{ clipPath: "polygon(0 5%, 100% 0, 100% 100%, 0% 100%)" }}
     >
       <h2 className="my-16 text-center text-4xl font-bold italic text-teal-600">
         Kako do vozačke dozvole?

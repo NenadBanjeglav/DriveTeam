@@ -13,34 +13,37 @@ const About = () => {
           <h2 className="mb-12 text-center text-4xl font-bold italic text-teal-600 md:text-left">
             Zašto odabrati DriveTeam?
           </h2>
-          <p className="mb-4 text-center text-lg leading-relaxed text-gray-700 md:text-left">
+          <p className="mb-4 text-center text-sm leading-relaxed text-muted-foreground md:text-left">
             U DriveTeam-u verujemo da svaka vožnja započinje avanturom!
           </p>
-          <p className="mb-4 text-center text-lg leading-relaxed text-gray-700 md:text-left">
+          <p className="mb-4 text-center text-sm leading-relaxed text-muted-foreground md:text-left">
             Naša misija je da te osnažimo sa veštinama i samopouzdanjem
             potrebnim da osvojiš puteve.
           </p>
-          <p className="mb-4 text-center text-lg leading-relaxed text-gray-700 md:text-left">
+          <p className="mb-4 text-center text-sm leading-relaxed text-muted-foreground md:text-left">
             Obuka voznje nije samo za polaganje ispita, to je putovanje koje te
             vodi ka slobodi i uzbuđenju. Naši instruktori su pravi vozački
             entuzijasti koji dele strast prema vožnji. Svaka lekcija je
             prilagođena baš tebi, kako bismo osigurali da se osećaš sjajno dok
             učiš!
           </p>
-          <p className="mb-4 text-center text-lg leading-relaxed text-gray-700 md:text-left">
+          <p className="mb-4 text-center text-sm leading-relaxed text-muted-foreground md:text-left">
             Ponosimo se svojim modernim pristupom obuci vozača. Spajamo
             praktičnu obuku sa najnovijom tehnologijom, stvarajući iskustvo koje
             je zabavno i efikasno. Naš cilj je da tvoje vreme s nama bude
             uzbudljivo, bez stresa i sa puno osmeha.
           </p>
-          <p className="text-center text-lg leading-relaxed text-gray-700 md:text-left">
+          <p className="text-center text-sm leading-relaxed text-muted-foreground md:text-left">
             Pridruži nam se u DriveTeam-u i kreni na vozačku avanturu koja će ti
             promeniti život. Zajedno ćemo osvojiti puteve i uživati u svakom
             trenutku!
           </p>
+          <Button className="mt-12 w-full rounded-full bg-teal-600 hover:bg-teal-500">
+            Rezervisi svoje mesto
+          </Button>
         </div>
 
-        <div className="flex w-full max-w-lg flex-col justify-center">
+        <div className=" w-full ">
           <Image
             src="/about.jpg"
             width={600}
@@ -48,9 +51,6 @@ const About = () => {
             alt="Instruktor i ucenik voze auto"
             className="rounded-2xl object-cover shadow-2xl"
           />
-          <Button className="mt-12 w-full rounded-full bg-teal-600 hover:bg-teal-500">
-            Rezervisi svoje mesto
-          </Button>
         </div>
       </div>
     </section>

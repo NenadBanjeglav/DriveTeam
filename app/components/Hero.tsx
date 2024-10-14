@@ -13,7 +13,7 @@ const HeroSection = () => {
     <header
       id="home"
       className="mb-12 mt-[-150px] flex h-screen items-center justify-center bg-teal-50 bg-[url('/hero.jpg')] bg-cover bg-center pt-[150px]"
-      style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 90%)" }}
+      style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 95%)" }}
     >
       <div className="w-full rounded bg-black/50 p-6 text-center text-white shadow-lg">
         <h1 className="mb-4 text-3xl font-bold leading-tight md:text-5xl">
