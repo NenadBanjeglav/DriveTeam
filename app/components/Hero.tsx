@@ -52,7 +52,7 @@ const HeroSection = () => {
           Spremni za putovanje koje će vam promeniti život?
         </p>
 
-        <div className="flex flex-col justify-center space-x-0 md:flex-row md:space-x-4 mt-8">
+        <div className="flex flex-col justify-center space-x-0 md:flex-row md:space-x-4 mt-8 gap-4">
           <Button className="rounded-full bg-teal-600 hover:bg-teal-500">
             Prijavi se odmah
           </Button>
