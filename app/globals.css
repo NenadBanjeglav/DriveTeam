@@ -32,6 +32,15 @@ body {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+  .tooltip {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .relative:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 @layer base {

@@ -10,18 +10,18 @@ import {
 import { processSteps } from "@/lib/data";
 import Link from "next/link";
 import React from "react";
+import DownArrow from "./DownArrow";
 
 const Steps = () => {
   return (
     <section
       id="steps"
-      className="mt-[-150px] bg-teal-100/50 p-8 pt-[200px]"
-      style={{ clipPath: "polygon(0 5%, 100% 0, 100% 100%, 0% 100%)" }}
+      className="flex flex-col items-center justify-center p-8"
     >
       <h2 className="my-16 text-center text-4xl font-bold italic text-teal-600">
         Kako do vozačke dozvole?
       </h2>
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-2">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {processSteps.map((step) => (
           <Card
             key={step.name}
@@ -34,20 +34,25 @@ const Steps = () => {
               </CardTitle>
               <CardDescription className="text-center text-lg text-teal-500"></CardDescription>
             </CardHeader>
-            <CardContent className="mt-[-20px] text-center text-muted-foreground">
-              <p>{step.description}</p>
+            <CardContent className="mt-[-20px] text-center">
+              <p className="italic text-muted-foreground">{step.description}</p>
             </CardContent>
             <CardFooter className="mt-4">
               <Button
                 asChild
-                className="rounded-full bg-teal-600 hover:bg-teal-500"
+                className={`rounded-full bg-teal-600 hover:bg-teal-500`}
               >
-                <Link href={step.href}>Saznaj vise</Link>
+                {step.name === "Upis" ? (
+                  <Link href={step.href}>PRIJAVI SE</Link>
+                ) : (
+                  <Link href={step.href}>SAZNAJ JOS</Link>
+                )}
               </Button>
             </CardFooter>
           </Card>
         ))}
       </div>
+      <DownArrow href="#pricing" />
     </section>
   );
 };
