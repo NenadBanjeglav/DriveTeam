@@ -34,10 +34,12 @@ export default function RootLayout({
         },
       }}
     >
-      <html lang="en" style={{ scrollBehavior: "smooth" }}>
-        <body
-          className={`${inter.variable} no-scrollbar bg-gray-50 antialiased`}
-        >
+      <html
+        lang="en"
+        style={{ scrollBehavior: "smooth" }}
+        className="no-scrollbar overflow-y-hidden"
+      >
+        <body className={`${inter.variable}  bg-gray-50 antialiased`}>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
