@@ -37,7 +37,7 @@ export default function RootLayout({
       <html
         lang="en"
         style={{ scrollBehavior: "smooth" }}
-        className="no-scrollbar overflow-y-hidden"
+        className="no-scrollbar overflow-x-hidden"
       >
         <body className={`${inter.variable}  bg-gray-50 antialiased`}>
           <ThemeProvider
