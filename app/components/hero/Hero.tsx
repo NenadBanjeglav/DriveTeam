@@ -35,7 +35,7 @@ const HeroSection = () => {
           className="mt-4"
         />
         <AnimatedHeading />
-        <p className="text-lg italic">
+        <p className="text-lg italic text-muted">
           Spremni za putovanje koje će vam promeniti život?
         </p>
 
