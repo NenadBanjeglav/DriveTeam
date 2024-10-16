@@ -24,7 +24,7 @@ const Steps = () => {
         {processSteps.map((step) => (
           <Card
             key={step.name}
-            className="flex flex-col items-center justify-center p-6"
+            className="flex flex-col items-center justify-center p-6 shadow-sm"
           >
             <CardHeader>
               <CardTitle className="mb-4 flex flex-col items-center justify-center gap-2 text-center text-teal-500">
@@ -47,9 +47,6 @@ const Steps = () => {
           </Card>
         ))}
       </div>
-      <Button className="mt-12 rounded-full bg-teal-600 hover:bg-teal-500">
-        NAUCI I TI
-      </Button>
     </section>
   );
 };
