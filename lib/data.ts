@@ -105,76 +105,76 @@ export const processSteps: StepsProps[] = [
 ];
 
 interface TestimonialsProps {
+  quote: string;
   name: string;
-  review: string;
-  rating: number;
+  title: string;
 }
 
 export const testimonials: TestimonialsProps[] = [
   {
     name: "Nikolai Razguliaev",
-    review:
-      "Great school, my reccomendations. Especially instructor Vladan who helped me to remember how to use manual transmission after more then 10 years. After just one class I regained all my skills and learned some new things about how to use manual gearbox more efficiently. And also Vladan speaks good English, which is great for those who not very proficient in Serbian. Thanks a lot!",
-    rating: 5,
+    title: "Učenik",
+    quote:
+      "Sjajna škola, moje preporuke. Posebno instruktor Vladan koji mi je pomogao da se setim kako se koristi manuelna transmisija nakon više od 10 godina. Nakon samo jednog časa povratio sam sve svoje veštine i naučio nekoliko novih stvari o efikasnijem korišćenju manuelne menjačnice. Takođe, Vladan govori dobro engleski, što je sjajno za one koji nisu vrlo vešti u srpskom. Hvala puno!",
   },
   {
     name: "Stevan Grbic",
-    review:
-      "Auto school with friendly teachers and instructors. Friendly, informative, patient, and very good. The team has come forward for me to adapt to my difficult schedule for which I am very grateful. DriveTeam comes highly recommended, and you should give them a call to learn how to drive or even to just get reminded if you had a long break.",
-    rating: 5,
+    title: "Učenik",
+    quote:
+      "Auto škola sa prijateljskim profesorima i instruktorima. Prijateljski, informativni, strpljivi i veoma dobri. Tim se potrudili da se prilagodi mom teškom rasporedu, na čemu sam im veoma zahvalan. DriveTeam toplo preporučujem, i treba da ih pozovete da naučite da vozite ili čak da se podsetite ako ste imali dugu pauzu.",
   },
   {
     name: "Jovan Pekic",
-    review:
-      "Professionalism, responsibility, excellent relationship with candidates. Kudos to the lecturer. Recommended to everyone!",
-    rating: 5,
+    title: "Učenik",
+    quote:
+      "Profesionalizam, odgovornost, odličan odnos sa kandidatima. Sve pohvale za predavača. Preporučeno svima!",
   },
   {
     name: "Matrix Novi Sad",
-    review:
-      "Driving school that exceeds all expectations! A professional lecturer provides a thorough understanding of traffic rules, making the theory simple and interesting. Instructor Boris who defines excellence! Professional, patient and with an exceptional motivational approach. His rich experience makes every ride an educational and exciting adventure. I highly recommend this instructor to anyone who wants to not only learn to drive, but also enjoy the process with an expert who provides support and confidence on the road to driving proficiency. This is a place where you not only learn, but also develop a love for driving.I am delighted with the speed of learning, attention and support of lecturers and instructors. This is definitely the right place for every future driver!",
-    rating: 5,
+    title: "Učenik",
+    quote:
+      "Auto škola koja nadmašuje sva očekivanja! Profesionalni predavač pruža temeljno razumevanje saobraćajnih pravila, čineći teoriju jednostavnom i zanimljivom. Instruktor Boris definiše izvrsnost! Profesionalan, strpljiv i sa izuzetnim motivacionim pristupom. Njegovo bogato iskustvo čini svaku vožnju obrazovnom i uzbudljivom avanturom. Toplo preporučujem ovog instruktora svima koji žele ne samo da nauče da voze, već i da uživaju u procesu sa stručnjakom koji pruža podršku i samopouzdanje na putu do vozačke veštine. Ovo je mesto gde ne samo da učite, već i razvijate ljubav prema vožnji. Oduševljen sam brzinom učenja, pažnjom i podrškom predavača i instruktora. Ovo je definitivno pravo mesto za svakog budućeg vozača!",
   },
   {
     name: "Zorica Bojovic",
-    review:
-      "I passed a long time ago, and I haven't driven for a long time! After a few extra lessons, I'm a driver again! All the best!!!",
-    rating: 5,
+    title: "Bivši učenik",
+    quote:
+      "Polagala sam pre dugo vremena, i dugo nisam vozila! Nakon nekoliko dodatnih časova, ponovo sam vozač! Sve najbolje!!!",
   },
   {
     name: "Dario",
-    review:
-      "Definitely the best driving school in the city, and I believe the sires too, I haven't met such positive and professional people in a very long time. From the lecturers who try to explain everything as much as possible and do it successfully, to the instructors who have so much patience and knowledge to teach everyone. From the first lesson with the instructor, the atmosphere was relaxed and that helped a lot with relaxing behind the wheel in such a crowded city where everyone is rushing and where it is always crowded. Every deadline was met, every class was driven from start to finish without a minute of delay or shortening. Really sincere recommendation for anyone who wants a very nice experience with very good people and who wants to learn to drive in the best way and in the shortest time. Thank you once again for another beautiful period ❤️",
-    rating: 5,
+    title: "Učenik",
+    quote:
+      "Definitivno najbolja auto škola u gradu, i verujem i u seriji, nisam sreo tako pozitivne i profesionalne ljude u jako dugo vremena. Od predavača koji se trude da sve objasne koliko god je moguće i uspešno to rade, do instruktora koji imaju toliko strpljenja i znanja da podučavaju sve. Od prvog časa sa instruktorom, atmosfera je bila opuštena i to je puno pomoglo da se opustim za volanom u tako prenatrpanom gradu gde svi žure. Svaki rok je ispoštovan, svaki čas je vožen od početka do kraja bez minuta kašnjenja ili skraćivanja. Zaista iskrena preporuka za svakoga ko želi veoma lepo iskustvo sa veoma dobrim ljudima i ko želi da nauči da vozi na najbolji mogući način i u najkraćem vremenu. Hvala još jednom za još jedan prelep period ❤️",
   },
   {
     name: "Una Egelja",
-    review:
-      "People who will just put a smile on your face. Training passes, and you didn't even feel it considering the energy this team exudes. The enormous commitment, understanding, patience and desire to work of these wonderful people are exactly what will help you step into the traffic full of confidence without any effort or fear.Milijana Perišić, the theory lecturer, is a girl full of positive energy, with whom the theory classes go by like a joke. Communication with her and making arrangements are very easy and she selflessly shares her knowledge outside of class time.Boris Gadžić, driving instructor, always relaxed and smiling. It regularly fulfills its main goal, to lead candidates on the right path and show them responsibility and traffic awareness. Willing to meet and coordinate, he agrees on the dates of the classes and devotes himself to each candidate individually. He gives his time and effort completely to the future driver, not forgetting a single detail. Wonderful experience with Drive Team!☺️",
-    rating: 5,
+    title: "Učenik",
+    quote:
+      "Ljudi koji će vam samo izmamiti osmeh na lice. Obuka prolazi, a niste ni osetili, s obzirom na energiju koju ovaj tim emituje. Ogromna posvećenost, razumevanje, strpljenje i želja za radom ovih divnih ljudi su upravo ono što će vam pomoći da kročite u saobraćaj puni samopouzdanja bez ikakvog napora ili straha. Milijana Perišić, predavač teorije, devojka je puna pozitivne energije, sa kojom časovi teorije prolaze kao šala. Komunikacija s njom i dogovor su veoma laki, a ona nesebično deli svoje znanje i van časova. Boris Gadžić, instruktor vožnje, uvek opušten i nasmejan. Redovno ispunjava svoj glavni cilj, da vodi kandidate na pravom putu i pokaže im odgovornost i svest o saobraćaju. Spreman da se sastane i koordinira, dogovara datume časova i posvećuje se svakom kandidatu pojedinačno. U potpunosti daje svoje vreme i trud budućem vozaču, ne zaboravljajući nijednu pojedinost. Divno iskustvo sa Drive Team! ☺️",
   },
   {
     name: "Marijana Marković",
-    review:
-      "All recommendations for Drive Team. 🍀 Wonderful people, experts, always ready to meet. I have only words of praise. From Milijana, who is a wonderful lecturer and who tries to pass on knowledge, to explain everything and help, to the instructor Boris, who is full of understanding and patience, dedicated and professional. All the best. I recommend it to those who are afraid of driving and traffic, as I was, but also to those who want this whole experience to pass quickly and without a lot of stress. 🌻",
-    rating: 5,
+    title: "Učenik",
+    quote:
+      "Sve preporuke za Drive Team. 🍀 Divni ljudi, stručnjaci, uvek spremni da pomognu. Imam samo reči hvale. Od Milijane, koja je divan predavač i koja se trudi da prenese znanje, do instruktora Borisa, koji je pun razumevanja i strpljenja, posvećen i profesionalan. Sve najbolje. Preporučujem onima koji se boje vožnje i saobraćaja, kao što sam bila ja, ali i onima koji žele da ovo iskustvo prođe brzo i bez mnogo stresa. 🌻",
   },
   {
     name: "Nikola Zinic",
-    review:
-      "A young but extremely dedicated team of responsible people who should be supported in every way! And if I have been an active driver for a long time, I am familiar with their activities, dedication and diligence, so that their driving school grows day by day. Go ahead and kudos to the boys!",
-    rating: 5,
+    title: "Podrška",
+    quote:
+      "Mlad, ali izuzetno posvećen tim odgovornih ljudi koje treba podržati na svaki način! I ako sam aktivni vozač već dugo vremena, upoznat sam sa njihovim aktivnostima, posvećenošću i marljivošću, tako da njihova auto škola raste iz dana u dan. Napred i sve pohvale momcima!",
   },
   {
     name: "Dajana Kult",
-    review:
-      "All recommendations for the Drive Team driving school, the first impression upon enrollment was positive. I was welcomed by Milijana, very kind with all the necessary information. I want to thank her for her knowledge and lessons that were very interesting. I also want to especially thank the instructor Boris, whom I would always be happy to recommend, I am delighted with the driving lessons and he also taught me to drive safely and without fear!",
-    rating: 5,
+    title: "Učenik",
+    quote:
+      "Sve preporuke za Drive Team auto školu, prvi utisak pri upisu bio je pozitivan. Dočekala me je Milijana, veoma ljubazna sa svim potrebnim informacijama. Želim da joj se zahvalim na njenom znanju i časovima koji su bili veoma zanimljivi. Takođe, želim posebno da se zahvalim instruktoru Borisu, kojeg bih uvek rado preporučila. Oduševljena sam časovima vožnje, a on me je naučio da vozim sigurno i bez straha!",
   },
   {
     name: "Stefan Vila",
-    review:
-      "The best driving school with the best professional staff. Quickly and easily get a license in an interesting and creative way with theory with Milijan and driving lessons with instructor Boris. Dedicated to their work, they are always there to answer all questions and help to master the training as easily as possible. Congratulations to the entire Drive Team driving school team.",
-    rating: 5,
+    title: "Učenik",
+    quote:
+      "Najbolja auto škola sa najboljim profesionalnim osobljem. Brzo i lako dobijate dozvolu na zanimljiv i kreativan način uz teoriju sa Milijanom i časove vožnje sa instruktorom Borisom. Posvećeni svom poslu, uvek su tu da odgovore na sva pitanja i pomognu da što lakše savladate obuku. Čestitke celom timu Drive Team auto škole.",
   },
 ];

@@ -3,7 +3,6 @@ import "./globals.css";
 import React from "react";
 import { Inter } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
-import { ThemeProvider } from "./context/theme-provider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -39,15 +38,10 @@ export default function RootLayout({
         style={{ scrollBehavior: "smooth" }}
         className="no-scrollbar overflow-x-hidden"
       >
-        <body className={`${inter.variable}  bg-gray-50 antialiased`}>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            {children}
-          </ThemeProvider>
+        <body
+          className={`${inter.variable}  bg-gray-100 text-muted-foreground antialiased`}
+        >
+          {children}
         </body>
       </html>
     </ClerkProvider>
