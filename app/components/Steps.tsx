@@ -47,6 +47,9 @@ const Steps = () => {
           </Card>
         ))}
       </div>
+      <Button className="mt-12 rounded-full bg-teal-600 hover:bg-teal-500">
+        NAUCI I TI
+      </Button>
     </section>
   );
 };
