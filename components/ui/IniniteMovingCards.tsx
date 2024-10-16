@@ -100,7 +100,7 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 size-[calc(100%_+_4px)]"
               ></div>
-              <span className="relative z-20 text-lg font-normal italic leading-[1.6] text-muted-foreground">
+              <span className="relative z-20 text-sm font-normal italic leading-[1.6] text-muted-foreground max-lg:text-lg md:text-base">
                 {item.quote}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
