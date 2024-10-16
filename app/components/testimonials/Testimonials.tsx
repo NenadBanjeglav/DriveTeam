@@ -1,7 +1,7 @@
 import React from "react";
-import DownArrow from "../DownArrow";
 import { InfiniteMovingCards } from "@/components/ui/IniniteMovingCards";
 import { testimonials } from "@/lib/data";
+import { Button } from "@/components/ui/button";
 
 const Testimonials = () => {
   return (
@@ -19,8 +19,9 @@ const Testimonials = () => {
           speed="slow"
         />
       </div>
-
-      <DownArrow href="#steps" className="mt-52 md:mt-28" />
+      <Button className="rounded-full bg-teal-600 hover:bg-teal-500">
+        PRIJAVI SE I TI
+      </Button>
     </section>
   );
 };

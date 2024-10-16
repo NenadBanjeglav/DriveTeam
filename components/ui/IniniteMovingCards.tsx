@@ -89,9 +89,9 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="relative flex max-h-[600px] w-[90vw] max-w-full shrink-0 flex-col items-center justify-center rounded-2xl border border-b-0 border-teal-500 p-5 md:w-[60vw] md:p-16"
+            className="relative flex max-h-[600px] w-[90vw] max-w-full shrink-0 flex-col items-center justify-center rounded-2xl  p-5 md:w-[60vw] md:p-16"
             style={{
-              background: "linear-gradient(180deg, #38b2a5, #2c7a7b)",
+              background: "bg-transparent",
             }}
             key={idx}
           >
@@ -100,11 +100,11 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 size-[calc(100%_+_4px)]"
               ></div>
-              <span className="relative z-20 text-sm font-normal italic leading-[1.6] text-white">
+              <span className="relative z-20 text-sm font-normal italic leading-[1.6] text-muted-foreground">
                 {item.quote}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
-                <span className="flex flex-col gap-1 rounded-full border border-teal-500 bg-white p-2">
+                <span className="flex flex-col gap-1">
                   <span className="text-sm font-bold leading-[1.6] text-teal-500">
                     {item.name}
                   </span>
