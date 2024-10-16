@@ -13,7 +13,7 @@ const Testimonials = () => {
         Šta kažu naši učenici?
       </h2>
       <div className="flex flex-col items-center justify-center">
-        <div className="relative flex h-[50vh] items-center rounded-md antialiased md:h-[30rem]">
+        <div className="relative flex h-[50vh] items-center overflow-x-hidden rounded-md antialiased md:h-[30rem]">
           <InfiniteMovingCards
             items={testimonials}
             direction="right"
