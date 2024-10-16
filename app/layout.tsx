@@ -33,13 +33,9 @@ export default function RootLayout({
         },
       }}
     >
-      <html
-        lang="en"
-        style={{ scrollBehavior: "smooth" }}
-        className="no-scrollbar overflow-x-hidden"
-      >
+      <html lang="en" style={{ scrollBehavior: "smooth" }}>
         <body
-          className={`${inter.variable}  bg-gray-100 text-muted-foreground antialiased`}
+          className={`${inter.variable}  overflow-x-hidden bg-gray-100 text-muted-foreground antialiased`}
         >
           {children}
         </body>
