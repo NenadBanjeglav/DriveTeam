@@ -34,19 +34,15 @@ const Steps = () => {
               </CardTitle>
               <CardDescription className="text-center text-lg text-teal-500"></CardDescription>
             </CardHeader>
-            <CardContent className="mt-[-20px] text-center">
+            <CardContent className="mt-[-40px] text-center">
               <p className="italic text-muted-foreground">{step.description}</p>
             </CardContent>
             <CardFooter className="mt-4">
               <Button
                 asChild
-                className={`rounded-full bg-teal-600 hover:bg-teal-500`}
+                className={`rounded-full border border-teal-500 bg-teal-50 text-muted-foreground hover:bg-teal-500 hover:text-white`}
               >
-                {step.name === "Upis" ? (
-                  <Link href={step.href}>PRIJAVI SE</Link>
-                ) : (
-                  <Link href={step.href}>SAZNAJ JOS</Link>
-                )}
+                <Link href={step.href}>Saznaj vise</Link>
               </Button>
             </CardFooter>
           </Card>

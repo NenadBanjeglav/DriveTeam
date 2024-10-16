@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
-import DownArrow from "../DownArrow";
 
 const About = () => {
   return (
@@ -67,7 +66,6 @@ const About = () => {
           />
         </div>
       </div>
-      <DownArrow href="#testimonials" />
     </section>
   );
 };

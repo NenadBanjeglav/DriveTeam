@@ -3,7 +3,6 @@ import React from "react";
 import Link from "next/link";
 import { Star } from "lucide-react";
 import AnimatedHeading from "./AnimatedHeading";
-import DownArrow from "../DownArrow";
 import Image from "next/image";
 
 const HeroSection = () => {
@@ -45,7 +44,6 @@ const HeroSection = () => {
           </Button>
         </div>
       </div>
-      <DownArrow href="#about" />
     </header>
   );
 };
