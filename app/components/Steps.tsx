@@ -10,7 +10,6 @@ import {
 import { processSteps } from "@/lib/data";
 import Link from "next/link";
 import React from "react";
-import DownArrow from "./DownArrow";
 
 const Steps = () => {
   return (
@@ -48,7 +47,6 @@ const Steps = () => {
           </Card>
         ))}
       </div>
-      <DownArrow href="#pricing" />
     </section>
   );
 };
