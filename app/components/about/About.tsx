@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
 
@@ -51,9 +50,9 @@ const About = () => {
             </p>
           </div>
 
-          <Button className="mt-12 w-full rounded-full bg-teal-600 hover:bg-teal-500">
+          {/* <Button className="mt-12 w-full rounded-full bg-teal-600 hover:bg-teal-500">
             REZERVISI MESTO
-          </Button>
+          </Button> */}
         </div>
 
         <div className=" w-full ">
