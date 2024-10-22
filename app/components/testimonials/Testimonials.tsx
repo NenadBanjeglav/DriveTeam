@@ -12,7 +12,7 @@ const Testimonials = () => {
       <h2 className="text-center text-4xl font-bold italic text-teal-600 md:mb-20">
         Šta kažu naši polaznici?
       </h2>
-      <div className="flex flex-col items-center justify-center">
+      <div className="my-8 flex flex-col items-center justify-center">
         <InfiniteMovingCards
           items={testimonials}
           direction="right"
