@@ -30,6 +30,11 @@ export const navbarLinks: NavigationProps[] = [
     icon: Store,
   },
   {
+    name: "Utisci",
+    href: "#testimonials",
+    icon: Star,
+  },
+  {
     name: "Kako do vozačke?",
     href: "#steps",
     icon: Route,
@@ -43,11 +48,6 @@ export const navbarLinks: NavigationProps[] = [
     name: "Česta Pitanja",
     href: "#faq",
     icon: ShieldQuestion,
-  },
-  {
-    name: "Utisci",
-    href: "#testimonials",
-    icon: Star,
   },
   {
     name: "Kontakt",
