@@ -102,7 +102,7 @@ const About = () => {
 
               <Link
                 href="tel:0213824417"
-                className="flex items-center justify-center gap-2 rounded-full border border-teal-500 bg-teal-100 p-2 text-teal-500 hover:border-teal-600 hover:text-teal-600"
+                className="flex items-center justify-center gap-2 rounded-full border border-teal-500 bg-teal-100 p-2 text-teal-500 transition ease-in-out hover:border-teal-600 hover:text-teal-600"
               >
                 <Phone size={20} />
                 021 3824 417
