@@ -38,7 +38,7 @@ export default function RootLayout({
         <body
           className={`${inter.variable} min-h-screen bg-gray-100 text-muted-foreground antialiased`}
         >
-          <ThemeProvider attribute="class" defaultTheme="dark">
+          <ThemeProvider attribute="class" defaultTheme="light">
             {children}
           </ThemeProvider>
         </body>
