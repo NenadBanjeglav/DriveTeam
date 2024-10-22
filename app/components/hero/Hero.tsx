@@ -42,8 +42,11 @@ const HeroSection = () => {
         </p>
 
         <div className="mt-8 flex flex-col justify-center gap-4 space-x-0 md:flex-row md:space-x-4">
-          <Button className="rounded-full bg-teal-600 hover:bg-teal-500">
-            PRIJAVI SE
+          <Button
+            asChild
+            className="rounded-full bg-teal-600 hover:bg-teal-500"
+          >
+            <Link href="#about">SAZNAJ VISE</Link>
           </Button>
         </div>
       </div>

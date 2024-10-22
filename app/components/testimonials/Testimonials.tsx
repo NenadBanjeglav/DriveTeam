@@ -10,7 +10,7 @@ const Testimonials = () => {
       className="flex w-full flex-col items-center justify-center overflow-x-hidden p-8 lg:py-24"
     >
       <h2 className="text-center text-4xl font-bold italic text-teal-600 md:mb-20">
-        Šta kažu naši učenici?
+        Šta kažu naši polaznici?
       </h2>
       <div className="flex flex-col items-center justify-center">
         <InfiniteMovingCards

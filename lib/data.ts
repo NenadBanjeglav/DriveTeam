@@ -133,7 +133,7 @@ export const testimonials: TestimonialsProps[] = [
     name: "Matrix Novi Sad",
     title: "Učenik",
     quote:
-      "Auto škola koja nadmašuje sva očekivanja! Profesionalni predavač pruža temeljno razumevanje saobraćajnih pravila, čineći teoriju jednostavnom i zanimljivom. Instruktor Boris definiše izvrsnost! Profesionalan, strpljiv i sa izuzetnim motivacionim pristupom. Njegovo bogato iskustvo čini svaku vožnju obrazovnom i uzbudljivom avanturom. Toplo preporučujem ovog instruktora svima koji žele ne samo da nauče da voze, već i da uživaju u procesu sa stručnjakom koji pruža podršku i samopouzdanje na putu do vozačke veštine. Ovo je mesto gde ne samo da učite, već i razvijate ljubav prema vožnji. Oduševljen sam brzinom učenja, pažnjom i podrškom predavača i instruktora. Ovo je definitivno pravo mesto za svakog budućeg vozača!",
+      "Auto škola koja nadmašuje sva očekivanja! Profesionalni predavač pruža temeljno razumevanje saobraćajnih pravila, čineći teoriju jednostavnom i zanimljivom. Instruktor Boris definiše izvrsnost! Profesionalan, strpljiv i sa izuzetnim motivacionim pristupom. Njegovo bogato iskustvo čini svaku vožnju obrazovnom i uzbudljivom avanturom. Toplo preporučujem ovog instruktora svima koji žele ne samo da nauče da voze, već i da uživaju u procesu sa stručnjakom koji pruža podršku i samopouzdanje na putu do vozačke veštine. Ovo je mesto gde ne samo da učite, već i razvijate ljubav prema vožnji.",
   },
   {
     name: "Zorica Bojovic",
@@ -145,13 +145,13 @@ export const testimonials: TestimonialsProps[] = [
     name: "Dario",
     title: "Učenik",
     quote:
-      "Definitivno najbolja auto škola u gradu, i verujem i u seriji, nisam sreo tako pozitivne i profesionalne ljude u jako dugo vremena. Od predavača koji se trude da sve objasne koliko god je moguće i uspešno to rade, do instruktora koji imaju toliko strpljenja i znanja da podučavaju sve. Od prvog časa sa instruktorom, atmosfera je bila opuštena i to je puno pomoglo da se opustim za volanom u tako prenatrpanom gradu gde svi žure. Svaki rok je ispoštovan, svaki čas je vožen od početka do kraja bez minuta kašnjenja ili skraćivanja. Zaista iskrena preporuka za svakoga ko želi veoma lepo iskustvo sa veoma dobrim ljudima i ko želi da nauči da vozi na najbolji mogući način i u najkraćem vremenu. Hvala još jednom za još jedan prelep period ❤️",
+      "Definitivno najbolja auto škola u gradu, i verujem i u seriji, nisam sreo tako pozitivne i profesionalne ljude u jako dugo vremena. Od predavača koji se trude da sve objasne koliko god je moguće i uspešno to rade, do instruktora koji imaju toliko strpljenja i znanja da podučavaju sve. Od prvog časa sa instruktorom, atmosfera je bila opuštena i to je puno pomoglo da se opustim za volanom u tako prenatrpanom gradu gde svi žure. Svaki rok je ispoštovan, svaki čas je vožen od početka do kraja bez minuta kašnjenja ili skraćivanja.",
   },
   {
     name: "Una Egelja",
     title: "Učenik",
     quote:
-      "Ljudi koji će vam samo izmamiti osmeh na lice. Obuka prolazi, a niste ni osetili, s obzirom na energiju koju ovaj tim emituje. Ogromna posvećenost, razumevanje, strpljenje i želja za radom ovih divnih ljudi su upravo ono što će vam pomoći da kročite u saobraćaj puni samopouzdanja bez ikakvog napora ili straha. Milijana Perišić, predavač teorije, devojka je puna pozitivne energije, sa kojom časovi teorije prolaze kao šala. Komunikacija s njom i dogovor su veoma laki, a ona nesebično deli svoje znanje i van časova. Boris Gadžić, instruktor vožnje, uvek opušten i nasmejan. Redovno ispunjava svoj glavni cilj, da vodi kandidate na pravom putu i pokaže im odgovornost i svest o saobraćaju. Spreman da se sastane i koordinira, dogovara datume časova i posvećuje se svakom kandidatu pojedinačno. U potpunosti daje svoje vreme i trud budućem vozaču, ne zaboravljajući nijednu pojedinost. Divno iskustvo sa Drive Team! ☺️",
+      "Ljudi koji će vam samo izmamiti osmeh na lice. Obuka prolazi, a niste ni osetili, s obzirom na energiju koju ovaj tim emituje. Ogromna posvećenost, razumevanje, strpljenje i želja za radom ovih divnih ljudi su upravo ono što će vam pomoći da kročite u saobraćaj puni samopouzdanja bez ikakvog napora ili straha. Milijana Perišić, predavač teorije, devojka je puna pozitivne energije, sa kojom časovi teorije prolaze kao šala. Komunikacija s njom i dogovor su veoma laki, a ona nesebično deli svoje znanje i van časova. Boris Gadžić, instruktor vožnje, uvek opušten i nasmejan. Redovno ispunjava svoj glavni cilj, da vodi kandidate na pravom putu i pokaže im odgovornost i svest o saobraćaju. Spreman da se sastane i koordinira, dogovara datume časova i posvećuje se svakom kandidatu pojedinačno.",
   },
   {
     name: "Marijana Marković",
