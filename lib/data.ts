@@ -25,7 +25,7 @@ interface NavigationProps {
 
 export const navbarLinks: NavigationProps[] = [
   {
-    name: "Zašto DriveTeam?",
+    name: "O nama",
     href: "#about",
     icon: Store,
   },

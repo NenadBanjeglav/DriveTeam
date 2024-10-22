@@ -4,12 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import Logo from "@/public/logo.svg";
-
 import MobileNav from "./MobileNav";
 import { navbarLinks } from "@/lib/data";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import { MapPin, Clock, Mail, Phone } from "lucide-react";
+import { RxInstagramLogo } from "react-icons/rx";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -35,15 +36,43 @@ const Navbar = () => {
       animate={hidden ? "hidden" : "visible"}
       transition={{ duration: 0.35, ease: "easeInOut" }}
     >
+      <address className="mx-auto mb-4 hidden max-w-7xl items-center justify-between text-xs text-white lg:flex">
+        <div className="flex max-w-7xl items-center justify-center gap-4">
+          <p className="flex items-center gap-2">
+            <MapPin size={16} className="text-teal-500" /> Bulevar patrijarha
+            Pavla 111,Novi Sad 21000
+          </p>
+          <p className="flex items-center gap-2">
+            <Clock size={16} className="text-teal-500" /> Pon - Pet : 09.00 -
+            18.00
+          </p>
+        </div>
+        <div className="flex items-center justify-center gap-4">
+          <p className="flex items-center gap-2">
+            <Mail size={16} className="text-teal-500" />
+            <a href="mailto:autoskola-dt@gmail.com">autoskola-dt@gmail.com</a>
+          </p>
+          <p className="flex items-center gap-2">
+            <Phone size={16} className="text-teal-500" />
+            <a href="tel:0213824417">021 3824 417</a>
+          </p>
+          <p className="flex items-center gap-2">
+            <Link href="https://www.instagram.com/autoskola.driveteam">
+              <RxInstagramLogo size={16} className="text-teal-500" />
+            </Link>
+            Instagram
+          </p>
+        </div>
+      </address>
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-5">
         <Link href="/">
           <Image
             src={Logo}
             alt="DriveTeam Logo"
-            className="max-xl:w-56 sm:w-24 md:w-32 lg:w-40 xl:w-48"
+            className="max-xl:w-56 md:w-36 xl:w-48"
           />
         </Link>
-        <div className="hidden sm:flex sm:items-center sm:justify-around sm:gap-2 md:gap-4 lg:gap-8">
+        <div className="hidden sm:gap-2 md:flex md:items-center md:justify-around md:gap-4 lg:gap-8">
           {navbarLinks.map((el) => (
             <Link
               scroll={true}
@@ -52,7 +81,7 @@ const Navbar = () => {
               className={cn(
                 pathname === el.href
                   ? "text-teal-500"
-                  : "text-white hover:text-teal-500"
+                  : "text-white hover:text-teal-500 text-sm lg:text-base md:text-sm"
               )}
             >
               {el.name}

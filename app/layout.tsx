@@ -35,7 +35,7 @@ export default function RootLayout({
     >
       <html lang="en" style={{ scrollBehavior: "smooth" }}>
         <body
-          className={`${inter.variable} bg-gray-100 text-muted-foreground antialiased`}
+          className={`${inter.variable} min-h-screen bg-gray-100 text-muted-foreground antialiased`}
         >
           {children}
         </body>

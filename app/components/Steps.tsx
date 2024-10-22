@@ -17,7 +17,7 @@ const Steps = () => {
       id="steps"
       className="flex flex-col items-center justify-center p-8"
     >
-      <h2 className="my-16 text-center text-4xl font-bold italic text-teal-600">
+      <h2 className="mb-16 mt-20 text-center text-4xl font-bold italic text-teal-600">
         Kako do vozačke dozvole?
       </h2>
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -41,7 +41,7 @@ const Steps = () => {
                 asChild
                 className={`rounded-full border border-teal-500 bg-teal-50 text-muted-foreground hover:bg-teal-500 hover:text-white`}
               >
-                <Link href={step.href}>Saznaj vise</Link>
+                <Link href={step.href}>Istrazi</Link>
               </Button>
             </CardFooter>
           </Card>

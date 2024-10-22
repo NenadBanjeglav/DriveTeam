@@ -11,8 +11,8 @@ const HomePage = () => {
       <Navbar />
       <HeroSection />
       <About />
-      <Steps />
       <Testimonials />
+      <Steps />
     </>
   );
 };
