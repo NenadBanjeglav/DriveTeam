@@ -65,7 +65,7 @@ const Card = ({ position, card, scrollYProgress }) => {
       <h3 className="mb-6 text-center text-4xl font-semibold italic md:text-6xl">
         {card.title}
       </h3>
-      <p className="mb-8 max-w-lg text-center text-sm md:text-base">
+      <p className="mb-8 max-w-lg text-center text-lg md:text-xl">
         {card.description}
       </p>
       {/* <a

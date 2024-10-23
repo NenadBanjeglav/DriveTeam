@@ -6,7 +6,7 @@ import React from "react";
 const AnimatedHeading = () => {
   const headline = "Nauči da voziš i započni avanturu!".split(" ");
   return (
-    <h1 className=" py-8 text-3xl font-bold leading-tight md:text-5xl">
+    <h1 className=" py-8 text-4xl font-bold italic leading-tight md:text-6xl">
       {headline.map((el, i) => (
         <motion.span
           initial={{ opacity: 0 }}
@@ -16,7 +16,6 @@ const AnimatedHeading = () => {
             delay: i / 5,
           }}
           key={i}
-          className={el === "DriveTeam" ? "italic text-teal-500" : ""}
         >
           {el}
           {i === 5 ? <br /> : " "}

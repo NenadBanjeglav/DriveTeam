@@ -9,27 +9,27 @@ const About = () => {
           <h3 className="mb-12 text-center text-4xl font-semibold italic text-teal-600 md:text-left md:text-6xl">
             Kreni u avanturu!
           </h3>
-          <p className="mb-4 text-center text-base leading-relaxed md:text-left">
+          <p className="mb-4 text-center text-lg leading-relaxed md:text-left md:text-xl">
             U DriveTeam-u verujemo da svaka vožnja započinje avanturom!
           </p>
-          <p className="mb-4 text-center text-base leading-relaxed  md:text-left">
+          <p className="mb-4 text-center text-lg leading-relaxed md:text-left  md:text-xl">
             Naša misija je da te osnažimo sa veštinama i samopouzdanjem
             potrebnim da osvojiš puteve.
           </p>
-          <p className="mb-4 text-center text-base leading-relaxed md:text-left">
+          <p className="mb-4 text-center text-lg leading-relaxed md:text-left md:text-xl">
             Obuka voznje nije samo za polaganje ispita, to je putovanje koje te
             vodi ka slobodi i uzbuđenju. Naši instruktori su pravi vozački
             entuzijasti koji dele strast prema vožnji. Svaka lekcija je
             prilagođena baš tebi, kako bismo osigurali da se osećaš sjajno dok
             učiš!
           </p>
-          <p className="mb-4 text-center text-base leading-relaxed md:text-left">
+          <p className="mb-4 text-center text-lg leading-relaxed md:text-left md:text-xl">
             Ponosimo se svojim modernim pristupom obuci vozača. Spajamo
             praktičnu obuku sa najnovijom tehnologijom, stvarajući iskustvo koje
             je zabavno i efikasno. Naš cilj je da tvoje vreme s nama bude
             uzbudljivo, bez stresa i sa puno osmeha.
           </p>
-          <p className="text-center text-base leading-relaxed md:text-left">
+          <p className="text-center text-lg leading-relaxed md:text-left md:text-xl">
             Pridruži nam se u DriveTeam-u i kreni na vozačku avanturu koja će ti
             promeniti život. Zajedno ćemo osvojiti puteve i uživati u svakom
             trenutku!
@@ -42,7 +42,7 @@ const About = () => {
               height={100}
               className="mr-2"
             />
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm italic text-muted-foreground">
               Boris Gadzic - Direktor i instruktor
             </p>
           </div>
