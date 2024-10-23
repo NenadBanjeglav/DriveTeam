@@ -61,7 +61,7 @@ const Card = ({ position, card, scrollYProgress }) => {
       }}
       className="sticky top-0 flex w-full origin-top flex-col items-center justify-center px-4"
     >
-      <card.Icon className="mb-4 text-4xl" />
+      <card.Icon className="mb-4 size-12" />
       <h3 className="mb-6 text-center text-4xl font-semibold italic md:text-6xl">
         {card.title}
       </h3>
@@ -93,7 +93,7 @@ const Why = () => {
   });
   return (
     <>
-      <div ref={ref} className="relative">
+      <section id="about" ref={ref} className="relative">
         {CARDS.map((card, i) => (
           <Card
             key={card.id}
@@ -103,7 +103,7 @@ const Why = () => {
           />
         ))}
         <div className="h-screen bg-teal-700" />
-      </div>
+      </section>
     </>
   );
 };

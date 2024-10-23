@@ -8,7 +8,7 @@ const Testimonials = () => {
       id="testimonials"
       className="flex w-full flex-col items-center justify-center overflow-x-hidden p-8 lg:py-12"
     >
-      <h3 className="mb-10 text-center text-4xl font-bold italic text-teal-600 md:mb-20">
+      <h3 className="mb-10 text-center text-4xl font-semibold italic text-teal-600 md:mb-20 md:text-6xl">
         Šta kažu naši polaznici?
       </h3>
       {/* <div className="max-w-2xl">

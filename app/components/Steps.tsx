@@ -16,7 +16,7 @@ const Steps = () => {
       id="steps"
       className="flex flex-col items-center justify-center p-8"
     >
-      <h2 className="mb-12 text-center text-4xl font-bold italic text-teal-600">
+      <h2 className="mb-12 text-center text-4xl font-semibold italic text-teal-600 md:text-6xl">
         Kako do vozačke dozvole?
       </h2>
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">

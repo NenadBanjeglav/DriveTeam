@@ -3,13 +3,10 @@ import React from "react";
 
 const About = () => {
   return (
-    <section
-      id="about"
-      className="mx-auto my-20 flex w-full flex-col items-center justify-center gap-16 p-8"
-    >
+    <section className="mx-auto my-20 flex w-full flex-col items-center justify-center gap-16 p-8">
       <div className="mx-auto mb-16 flex max-w-7xl flex-col-reverse items-center justify-center gap-8 lg:flex-row lg:gap-28">
         <div className="mb-6 max-w-lg basis-2/4 md:mb-0">
-          <h3 className="mb-12 text-center text-4xl font-bold italic text-teal-600 md:text-left">
+          <h3 className="mb-12 text-center text-4xl font-semibold italic text-teal-600 md:text-left md:text-6xl">
             Kreni u avanturu!
           </h3>
           <p className="mb-4 text-center text-base leading-relaxed md:text-left">
