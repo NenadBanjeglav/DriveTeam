@@ -2,7 +2,6 @@
 import { useScroll, motion, useTransform } from "framer-motion";
 import { DollarSign, HelpCircle, Smile, Users } from "lucide-react";
 import React, { useRef } from "react";
-import { FiArrowRight } from "react-icons/fi";
 
 const CARD_HEIGHT = 500;
 
@@ -69,7 +68,7 @@ const Card = ({ position, card, scrollYProgress }) => {
       <p className="mb-8 max-w-lg text-center text-sm md:text-base">
         {card.description}
       </p>
-      <a
+      {/* <a
         href={card.routeTo}
         className={`flex items-center gap-2 rounded px-6 py-4 text-base font-medium uppercase text-black transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 md:text-lg ${
           card.ctaClasses
@@ -81,7 +80,7 @@ const Card = ({ position, card, scrollYProgress }) => {
       >
         <span>Saznaj više</span>
         <FiArrowRight />
-      </a>
+      </a> */}
     </motion.div>
   );
 };
