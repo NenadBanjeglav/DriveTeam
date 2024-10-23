@@ -40,7 +40,7 @@ export const navbarLinks: NavigationProps[] = [
     icon: Route,
   },
   {
-    name: "Paketi",
+    name: "Paketi i cene",
     href: "#pricing",
     icon: HandCoins,
   },

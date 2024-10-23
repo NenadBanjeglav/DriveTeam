@@ -9,7 +9,7 @@ import { navbarLinks } from "@/lib/data";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
-import { MapPin, Clock, Mail, Phone } from "lucide-react";
+import { MapPin, Clock, Mail, Phone, Smartphone } from "lucide-react";
 import { RxInstagramLogo } from "react-icons/rx";
 
 const Navbar = () => {
@@ -44,13 +44,17 @@ const Navbar = () => {
           </p>
           <p className="flex items-center gap-2">
             <Clock size={16} className="text-teal-500" /> Pon - Pet : 09.00 -
-            18.00
+            17.00
           </p>
         </div>
         <div className="flex items-center justify-center gap-4">
           <p className="flex items-center gap-2">
             <Mail size={16} className="text-teal-500" />
-            <a href="mailto:autoskola-dt@gmail.com">autoskola-dt@gmail.com</a>
+            <a href="mailto:as.driveteam@yahoo.com">as.driveteam@yahoo.com</a>
+          </p>
+          <p className="flex items-center gap-2">
+            <Smartphone size={16} className="text-teal-500" />
+            <a href="tel:0668805100">066 880 5100</a>
           </p>
           <p className="flex items-center gap-2">
             <Phone size={16} className="text-teal-500" />
