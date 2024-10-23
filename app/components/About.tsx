@@ -1,7 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { Check, Phone } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+
 import React from "react";
 import Stats from "./Stats";
 
@@ -64,53 +62,6 @@ const About = () => {
             alt="Slika direktora"
             className="rounded-full object-cover shadow-2xl"
           />
-        </div>
-      </div>
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-8 lg:flex-row lg:gap-28">
-        <div className="basis-2/4">
-          <Image
-            src="/about.jpg"
-            width={600}
-            height={600}
-            alt="Zena uci da vozi"
-            className="rounded-full object-cover shadow-2xl"
-          />
-        </div>
-        <div className="mb-6 max-w-lg basis-2/4 md:mb-0">
-          <h3 className="mb-12  text-center text-4xl font-bold italic text-teal-600 md:text-left">
-            Zašto DriveTeam?
-          </h3>
-          <div className="flex flex-col items-start">
-            <p className="mb-4 flex items-center justify-center gap-4 text-center text-base leading-relaxed md:text-left">
-              <Check size={24} className="text-teal-500" /> Iskusni i strpljivi
-              instruktori
-            </p>
-            <p className="mb-4 flex items-center justify-center gap-4 text-center text-base leading-relaxed md:text-left">
-              <Check size={24} className="text-teal-500" /> Pristup lekcijama
-              online
-            </p>
-            <p className="mb-4 flex items-center justify-center gap-4 text-center text-base leading-relaxed md:text-left">
-              <Check size={24} className="text-teal-500" /> Obuka na modernim
-              vozilima
-            </p>
-            <p className="mb-4 flex items-center justify-center gap-4 text-center text-base leading-relaxed md:text-left">
-              <Check size={24} className="text-teal-500" /> Konkurentne cene i
-              plaćanje na rate
-            </p>
-            <div className="mt-12 flex w-full items-center justify-start gap-4">
-              <Button className="rounded-full bg-teal-600 hover:bg-teal-500">
-                PRIJAVI SE ONLINE
-              </Button>
-
-              <Link
-                href="tel:0213824417"
-                className="flex items-center justify-center gap-2 rounded-full border border-teal-500 bg-teal-100 p-2 text-teal-500 transition ease-in-out hover:border-teal-600 hover:text-teal-600"
-              >
-                <Phone size={20} />
-                021 3824 417
-              </Link>
-            </div>
-          </div>
         </div>
       </div>
     </section>
