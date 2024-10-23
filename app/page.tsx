@@ -7,6 +7,7 @@ import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import Pricing from "./components/Pricing";
 import Why from "./components/hero/Why";
+import Stats from "./components/Stats";
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
       <Navbar />
       <HeroSection />
       <Why />
+      <Stats />
       <Testimonials />
       <About />
       <Steps />
