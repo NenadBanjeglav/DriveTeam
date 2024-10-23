@@ -6,14 +6,12 @@ import Navbar from "./components/navbar/Navbar";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import Pricing from "./components/Pricing";
-import Stats from "./components/Stats";
 
 const HomePage = () => {
   return (
     <>
       <Navbar />
       <HeroSection />
-      <Stats />
       <About />
       <Testimonials />
       <Steps />

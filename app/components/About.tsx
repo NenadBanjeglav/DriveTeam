@@ -3,6 +3,7 @@ import { Check, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Stats from "./Stats";
 
 const About = () => {
   return (
@@ -10,6 +11,7 @@ const About = () => {
       id="about"
       className="mx-auto my-20 flex w-full flex-col items-center justify-center gap-16 p-8"
     >
+      <Stats />
       <div className="mx-auto mb-16 flex max-w-7xl flex-col-reverse items-center justify-center gap-8 lg:flex-row lg:gap-28">
         <div className="mb-6 max-w-lg basis-2/4 md:mb-0">
           <h3 className="mb-12 text-center text-4xl font-bold italic text-teal-600 md:text-left">
