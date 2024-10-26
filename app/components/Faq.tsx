@@ -17,36 +17,45 @@ const Faq = () => {
       <div className="mx-auto max-w-3xl">
         <Question title="Šta je potrebno za upis u auto školu?" defaultOpen>
           Za upis u auto školu, kandidat mora da ima navršenih minimum 16 godina
-          i važeću ličnu kartu, a za polaganje praktičnog ispita minimum 17
-          godina.
+          i važeću ličnu kartu. Kada napuniš 17 godina, možeš se pripremiti za
+          uzbudljiv praktični ispit i zakoračiti u svet vožnje!
         </Question>
         <Question title="Koliko traje obuka?">
-          Obuka traje 3 meseca ukoliko kandidat redovno dolazi na časove
-          teorije, iz prve položi teorijski ispit, redovno ima časove vožnje i
-          iz prve položi praktični ispit.
+          Obuka traje 3 meseca, ali samo ako si redovan na časovima teorije,
+          lako položiš teorijski ispit, i uzbuđeno se upustiš u časove vožnje da
+          bi iz prve prošao praktični ispit. Tvoj put do vozačke dozvole traje
+          samo 3 meseca avanture!
         </Question>
         <Question title="Koji su načini plaćanja?">
-          Plaćanje može biti u celosti (tada se ostvaruje popust), na rate dok
-          traje obuka, čekovima ili putem administrativne zabrane.
+          Plaćanje može biti u celosti (i tada te čeka popust), ili na rate dok
+          traje tvoja vozačka avantura. Možeš koristiti čekove ili
+          administrativnu zabranu – odaberi način koji ti najviše odgovara kako
+          bi zakoračio u svet slobode!
         </Question>
         <Question title="Šta je uključeno u ukupnu cenu?">
-          U ukupnu cenu uključeno je 40 časova teorijske obuke, 40 časova
-          praktične obuke, teorijski ispit, praktični ispit, takse za MUP,
-          lekarsko uverenje i prva pomoć.
+          U ukupnu cenu uključeno je 40 časova teorijske obuke i 40 časova
+          praktične obuke, kao i teorijski i praktični ispit. Takođe, tu su
+          takse za MUP, lekarsko uverenje i obuka prve pomoći. Sve što ti treba
+          da postaneš pravi vozač!
         </Question>
         <Question title="Koliko često imamo časove teorije?">
-          Teorijska obuka se održava svaki radni dan, 3 časa dnevno, tako da sve
-          ukupno traje 13 radnih dana.
+          Teorijska obuka se održava svaki radni dan, sa 3 uzbudljiva časa
+          dnevno, što ukupno traje 13 radnih dana. Pripremi se da osvojiš znanje
+          koje će te odvesti do tvoje vozačke dozvole!
         </Question>
         <Question title="Koliko često imamo časove vožnje?">
-          Časove vožnje kandidat obično ima 3 puta nedeljno, dnevno 2 časa.
+          Časove vožnje obično imaš 3 puta nedeljno, sa 2 uzbudljiva časa svaki
+          dan. Oseti adrenalin dok savladaš vožnju i stičeš veštine koje će ti
+          omogućiti slobodu na putu!
         </Question>
         <Question title="Koliko često se organizuje nova grupa polaznika?">
-          Grupe organizujemo uglavnom jednom mesečno.
+          Grupe organizujemo uglavnom jednom mesečno, tako da se pripremi na
+          vreme i zakorači u ovu avanturu zajedno sa drugim budućim vozačima!
         </Question>
         <Question title="Da li postoji više termina predavanja ili samo jedan termin?">
-          Teorijska obuka se najčešće održava u dva termina, u prepodnevnom i
-          poslepodnevnom terminu, pa kandidat dolazi kada mu odgovara.
+          Teorijska obuka se najčešće održava u dva termina – prepodnevnom i
+          poslepodnevnom. Odaberi onaj koji ti najviše odgovara i uživaj u
+          učenju koje će te odvesti do slobode za volanom!
         </Question>
       </div>
     </section>
