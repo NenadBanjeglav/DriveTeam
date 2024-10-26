@@ -7,11 +7,14 @@ import useMeasure from "react-use-measure";
 
 const Faq = () => {
   return (
-    <section id="faq" className="px-4 py-12">
+    <section
+      id="faq"
+      className="flex flex-col items-center justify-center px-4 py-12"
+    >
+      <h3 className="mb-8 text-4xl font-semibold italic text-teal-600 md:text-left md:text-6xl">
+        Najčešća pitanja:
+      </h3>
       <div className="mx-auto max-w-3xl">
-        <h3 className=" mb-4 text-4xl font-semibold italic text-teal-600 md:text-left md:text-6xl">
-          Najčešća pitanja:
-        </h3>
         <Question title="Šta je potrebno za upis u auto školu?" defaultOpen>
           Za upis u auto školu, kandidat mora da ima navršenih minimum 16 godina
           i važeću ličnu kartu, a za polaganje praktičnog ispita minimum 17
