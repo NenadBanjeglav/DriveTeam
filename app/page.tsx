@@ -7,6 +7,7 @@ import Why from "./components/hero/Why";
 import Stats from "./components/Stats";
 import { StaggerTestimonials } from "./components/StaggerTestimonials";
 import Faq from "./components/Faq";
+import SteppedProgress from "./components/SteppedProgress";
 
 const HomePage = () => {
   return (
@@ -16,8 +17,8 @@ const HomePage = () => {
       <Why />
       <Stats />
       <StaggerTestimonials />
+      <SteppedProgress />
       <About />
-      {/* <Steps /> */}
       {/* <Pricing /> */}
       <Faq />
       <Footer />
