@@ -9,8 +9,8 @@ const Faq = () => {
   return (
     <section id="faq" className="px-4 py-12">
       <div className="mx-auto max-w-3xl">
-        <h3 className="mb-4 text-center text-3xl font-semibold text-teal-600">
-          Najčešća pitanja kandidata:
+        <h3 className=" mb-4 text-4xl font-semibold italic text-teal-600 md:text-left md:text-6xl">
+          Najčešća pitanja:
         </h3>
         <Question title="Šta je potrebno za upis u auto školu?" defaultOpen>
           Za upis u auto školu, kandidat mora da ima navršenih minimum 16 godina
@@ -80,7 +80,9 @@ const Question = ({ title, children, defaultOpen = false }: QuestionProps) => {
           }}
           className="bg-gradient-to-r from-teal-600 to-teal-700 bg-clip-text text-left text-lg font-medium"
         >
-          {title}
+          <h4 className="text-lg leading-relaxed md:text-left md:text-xl">
+            {title}
+          </h4>
         </motion.span>
         <motion.span
           variants={{
@@ -103,9 +105,14 @@ const Question = ({ title, children, defaultOpen = false }: QuestionProps) => {
           height: open ? height : "0px",
           marginBottom: open ? "24px" : "0px",
         }}
-        className="overflow-hidden text-slate-600"
+        className="overflow-hidden text-muted-foreground"
       >
-        <p ref={ref}>{children}</p>
+        <p
+          className="text-lg leading-relaxed md:text-left md:text-xl"
+          ref={ref}
+        >
+          {children}
+        </p>
       </motion.div>
     </motion.div>
   );
