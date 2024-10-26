@@ -3,7 +3,7 @@ import { useScroll, motion, useTransform } from "framer-motion";
 import { DollarSign, HelpCircle, Smile, Users } from "lucide-react";
 import React, { useRef } from "react";
 
-const CARD_HEIGHT = 500;
+const CARD_HEIGHT = 600;
 
 const CARDS = [
   {
@@ -102,7 +102,7 @@ const Why = () => {
             position={i + 1}
           />
         ))}
-        <div className="h-screen bg-teal-700" />
+        {/* <div className="h-screen bg-teal-700" /> */}
       </section>
     </>
   );

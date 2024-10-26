@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { animate, useInView } from "framer-motion";
 
 const Stats = () => {
@@ -10,14 +10,14 @@ const Stats = () => {
         Ponosni smo!
       </h3>
       <div className="flex flex-col items-center justify-center sm:flex-row">
-        <Stat num={5} suffix="" subheading="Godina postojanja Drive Team-a" />
+        <Stat num={2} suffix="" subheading="Godina postojanja Drive Team-a" />
 
         <div className="h-px w-12 bg-indigo-200 sm:h-12 sm:w-px" />
         <Stat num={200} suffix="+" subheading="Zadovoljnih polaznika!" />
 
         <div className="h-px w-12 bg-indigo-200 sm:h-12 sm:w-px" />
         <Stat
-          num={95}
+          num={90}
           suffix="%"
           subheading="Polozenih vozackih ispita iz prvog pokusaja!"
         />
@@ -36,22 +36,23 @@ interface StatProps {
 }
 
 const Stat = ({ num, suffix, decimals = 0, subheading }: StatProps) => {
-  const ref = useRef(null);
+  const ref = useRef<HTMLSpanElement | null>(null);
+  const [hasAnimated, setHasAnimated] = useState(false);
   const isInView = useInView(ref);
 
   useEffect(() => {
-    if (!isInView) return;
+    if (!isInView || hasAnimated) return;
 
     animate(0, num, {
       duration: 2.5,
       onUpdate(value) {
         if (!ref.current) return;
 
-        // @ts-ignore
         ref.current.textContent = value.toFixed(decimals);
       },
+      onComplete: () => setHasAnimated(true),
     });
-  }, [num, decimals, isInView]);
+  }, [num, decimals, isInView, hasAnimated]);
 
   return (
     <div className="flex w-72 flex-col items-center py-8 sm:py-0">
