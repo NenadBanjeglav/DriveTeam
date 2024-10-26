@@ -2,10 +2,8 @@ import { ForwardRefExoticComponent, RefAttributes } from "react";
 import {
   Store,
   Mail,
-  HandCoins,
   ShieldQuestion,
   LucideProps,
-  Route,
   Book,
   CheckCircle,
   Heart,
@@ -34,16 +32,16 @@ export const navbarLinks: NavigationProps[] = [
     href: "#testimonials",
     icon: Star,
   },
-  {
-    name: "Kako do vozačke?",
-    href: "#steps",
-    icon: Route,
-  },
-  {
-    name: "Paketi i cene",
-    href: "#pricing",
-    icon: HandCoins,
-  },
+  // {
+  //   name: "Kako do vozačke?",
+  //   href: "#steps",
+  //   icon: Route,
+  // },
+  // {
+  //   name: "Paketi i cene",
+  //   href: "#pricing",
+  //   icon: HandCoins,
+  // },
   {
     name: "Česta Pitanja",
     href: "#faq",
