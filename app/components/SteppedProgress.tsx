@@ -12,48 +12,42 @@ interface Korak {
 const koraci: Korak[] = [
   {
     step: 0,
-    title: "Kako do vozačke dozvole?",
-    description:
-      "Pripremi se za vozačku avanturu! Otkrij slobodu vožnje i postani pravi vozač kroz uzbudljive korake. Spremi se da osvojiš puteve i istražiš svet iz udobnosti svog automobila!",
-  },
-  {
-    step: 1,
     title: "Prijava i upis",
     description:
       "Ako si navršio 16 godina, tvoja avantura počinje ovde! Prikupi važeću ličnu kartu i zakorači u svet vožnje. Svaka pustolovina počinje prvim korakom – u tvom slučaju, prijavom!",
   },
   {
-    step: 2,
+    step: 1,
     title: "Teorijska obuka",
     description:
       "U narednih 13 dana, naučićeš sve tajne vožnje kroz 40 časova uzbudljivih predavanja. Upoznaj se s vozilom, saobraćajnim signalima i propisima. Svaka lekcija te vodi bliže tvojoj vozačkoj licenci!",
   },
   {
-    step: 3,
+    step: 2,
     title: "Teorijski ispit",
     description:
       "Pripremi se da dokažeš svoje znanje! Ispit traje 45 minuta i sadrži 41 pitanje. Osvoji najmanje 85 bodova i osiguraj sebi put do sledeće faze. Ovaj izazov je tvoj ključ za slobodu na putu!",
   },
   {
-    step: 4,
+    step: 3,
     title: "Lekarski pregled",
     description:
       "Pre nego što započneš praktičnu obuku, osiguraj svoje zdravstveno stanje. Donesi lekarsko uverenje koje će ti otvoriti vrata ka vožnji. Tvoj put ka nezavisnosti zahteva zdrav um i telo!",
   },
   {
-    step: 5,
+    step: 4,
     title: "Praktična obuka",
     description:
       "Sada počinje prava avantura! U 40 časova praktične obuke, vozićeš pod budnim okom instruktora. Dva časa dnevno, prilagođeni raspored, i ti za volanom. Oseti adrenalin dok stičeš veštine vožnje!",
   },
   {
-    step: 6,
+    step: 5,
     title: "Prva pomoć",
     description:
       "Učeći prvu pomoć, osiguraj da si spreman za svaku situaciju. Ova obuka te priprema za nepredviđene izazove na putu. Pokaži da si odgovoran vozač pre nego što se suočiš sa praktičnim ispitom!",
   },
   {
-    step: 7,
+    step: 6,
     title: "Praktični ispit",
     description:
       "Stigao si do finalnog izazova! Sa navršenih 17 godina, polažeš praktični ispit. Uključi motor, savladaj poligonske veštine i vožnju u saobraćaju. Ovaj ispit je tvoja prilika da pokažeš sve što si naučio i zakoračiš u svet slobodne vožnje!",
@@ -62,7 +56,7 @@ const koraci: Korak[] = [
 
 const SteppedProgress = () => {
   const [stepsComplete, setStepsComplete] = useState(0);
-  const numSteps = 7;
+  const numSteps = 6;
 
   const handleSetStep = (num: number) => {
     if (
@@ -76,8 +70,18 @@ const SteppedProgress = () => {
   };
 
   return (
-    <section id="steps">
-      <div className="bg-gray-100 px-4 py-14">
+    <section
+      id="steps"
+      className="mx-auto flex w-full flex-col items-center justify-center gap-16 p-8"
+    >
+      <h3 className="text-center text-4xl font-semibold italic text-teal-600 md:text-left md:text-6xl">
+        Kako do vozačke dozvole?
+      </h3>
+      <p className="text-center text-lg leading-relaxed md:text-left md:text-xl">
+        Pripremi se za vozačku avanturu! Otkrij slobodu vožnje i postani pravi
+        vozač kroz ove uzbudljive korake.
+      </p>
+      <div className="bg-gray-100">
         <div className="mx-auto w-full max-w-7xl  rounded-md bg-white p-8 shadow-lg">
           <Steps numSteps={numSteps} stepsComplete={stepsComplete} />
 

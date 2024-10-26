@@ -9,7 +9,7 @@ const Faq = () => {
   return (
     <section
       id="faq"
-      className="flex flex-col items-center justify-center px-4 py-12"
+      className="flex flex-col items-center justify-center px-4"
     >
       <h3 className="mb-8 text-4xl font-semibold italic text-teal-600 md:text-left md:text-6xl">
         Najčešća pitanja:

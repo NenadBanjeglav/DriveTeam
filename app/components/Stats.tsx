@@ -5,7 +5,7 @@ import { animate, useInView } from "framer-motion";
 
 const Stats = () => {
   return (
-    <div className="mx-auto max-w-3xl px-4 py-20 md:py-24">
+    <div className="mx-auto mb-20 max-w-3xl px-4">
       <h3 className="mb-12 text-center text-4xl font-semibold italic text-teal-600 md:text-6xl ">
         Ponosni smo!
       </h3>

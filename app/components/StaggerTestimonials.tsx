@@ -76,7 +76,7 @@ export const StaggerTestimonials = () => {
   return (
     <section
       id="testimonials"
-      className="relative mt-16 flex min-h-screen w-full flex-col items-center overflow-hidden bg-gray-100"
+      className="relative  flex min-h-[700px] w-full flex-col items-center overflow-hidden bg-gray-100"
       style={{
         height: SECTION_HEIGHT,
       }}
@@ -105,7 +105,7 @@ export const StaggerTestimonials = () => {
             />
           );
         })}
-        <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-8">
+        <div className="absolute bottom-24 left-1/2 flex -translate-x-1/2 gap-8">
           <button
             onClick={() => handleMove(-1)}
             className="grid size-14 place-content-center text-3xl transition-colors hover:bg-teal-700 hover:text-white"
