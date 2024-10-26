@@ -78,9 +78,10 @@ const SteppedProgress = () => {
   return (
     <section id="steps">
       <div className="bg-gray-100 px-4 py-14">
-        <div className="mx-auto w-full max-w-2xl rounded-md bg-white p-8 shadow-lg">
+        <div className="mx-auto w-full max-w-7xl  rounded-md bg-white p-8 shadow-lg">
           <Steps numSteps={numSteps} stepsComplete={stepsComplete} />
-          <div className="my-6 h-64  gap-4 rounded-lg border-2 border-dashed border-gray-200 bg-gray-100 p-4">
+
+          <div className="my-6 h-fit  gap-4 rounded-lg border-2 border-dashed border-gray-200 bg-gray-100 p-4">
             <h4 className="mb-8 text-center text-xl italic leading-relaxed text-teal-600 md:text-2xl">
               {koraci[stepsComplete].title}
             </h4>
@@ -149,7 +150,7 @@ const Step = ({ num, isActive }: StepProps) => {
   return (
     <div className="relative">
       <div
-        className={`relative z-10 flex size-10 shrink-0 items-center justify-center rounded-full border-2 text-sm font-semibold transition-colors duration-300 ${
+        className={`relative z-10 flex size-4 shrink-0 items-center justify-center rounded-full border-2 text-sm font-semibold transition-colors duration-300 sm:size-6 md:size-10 ${
           isActive
             ? "border-teal-600 bg-teal-600 text-white"
             : "border-gray-300 text-gray-300"
