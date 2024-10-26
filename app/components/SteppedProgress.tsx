@@ -76,7 +76,7 @@ const SteppedProgress = () => {
   };
 
   return (
-    <section>
+    <section id="steps">
       <div className="bg-gray-100 px-4 py-14">
         <div className="mx-auto w-full max-w-2xl rounded-md bg-white p-8 shadow-lg">
           <Steps numSteps={numSteps} stepsComplete={stepsComplete} />

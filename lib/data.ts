@@ -11,6 +11,7 @@ import {
   ClipboardCheck,
   Ambulance,
   Star,
+  Route,
 } from "lucide-react";
 
 interface NavigationProps {
@@ -32,11 +33,11 @@ export const navbarLinks: NavigationProps[] = [
     href: "#testimonials",
     icon: Star,
   },
-  // {
-  //   name: "Kako do vozačke?",
-  //   href: "#steps",
-  //   icon: Route,
-  // },
+  {
+    name: "Kako do vozačke?",
+    href: "#steps",
+    icon: Route,
+  },
   // {
   //   name: "Paketi i cene",
   //   href: "#pricing",
