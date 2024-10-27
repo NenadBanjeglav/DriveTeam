@@ -9,12 +9,12 @@ const Faq = () => {
   return (
     <section
       id="faq"
-      className="flex flex-col items-center justify-center px-4"
+      className="mb-20 flex flex-col items-center justify-center px-4"
     >
       <h3 className="mb-8 text-4xl font-semibold italic text-teal-600 md:text-left md:text-6xl">
         Najčešća pitanja:
       </h3>
-      <div className="mx-auto max-w-3xl">
+      <div className="mx-auto max-w-7xl">
         <Question title="Šta je potrebno za upis u auto školu?" defaultOpen>
           Za upis u auto školu, kandidat mora da ima navršenih minimum 16 godina
           i važeću ličnu kartu. Kada napuniš 17 godina, možeš se pripremiti za

@@ -12,6 +12,7 @@ import {
   Ambulance,
   Star,
   Route,
+  HandCoins,
 } from "lucide-react";
 
 interface NavigationProps {
@@ -38,11 +39,11 @@ export const navbarLinks: NavigationProps[] = [
     href: "#steps",
     icon: Route,
   },
-  // {
-  //   name: "Paketi i cene",
-  //   href: "#pricing",
-  //   icon: HandCoins,
-  // },
+  {
+    name: "Paketi i cene",
+    href: "#pricing",
+    icon: HandCoins,
+  },
   {
     name: "Česta Pitanja",
     href: "#faq",

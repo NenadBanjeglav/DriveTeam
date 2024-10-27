@@ -72,7 +72,7 @@ const SteppedProgress = () => {
   return (
     <section
       id="steps"
-      className="mx-auto flex w-full flex-col items-center justify-center gap-16 p-8"
+      className="mx-auto flex w-full flex-col items-center justify-center gap-16 p-8 md:mb-24"
     >
       <h3 className="text-center text-4xl font-semibold italic text-teal-600 md:text-left md:text-6xl">
         Kako do vozačke dozvole?

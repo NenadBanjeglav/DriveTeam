@@ -8,6 +8,7 @@ import Stats from "./components/Stats";
 import { StaggerTestimonials } from "./components/StaggerTestimonials";
 import Faq from "./components/Faq";
 import SteppedProgress from "./components/SteppedProgress";
+import { Pricing } from "./components/Pricing";
 
 const HomePage = () => {
   return (
@@ -18,9 +19,9 @@ const HomePage = () => {
       <Stats />
       <StaggerTestimonials />
       <SteppedProgress />
-      <About />
-      {/* <Pricing /> */}
       <Faq />
+      <About />
+      <Pricing />
       <Footer />
     </>
   );

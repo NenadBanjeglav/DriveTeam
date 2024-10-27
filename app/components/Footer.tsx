@@ -4,7 +4,6 @@ import Link from "next/link";
 import React from "react";
 import { RxInstagramLogo } from "react-icons/rx";
 import Logo from "@/public/logo.svg";
-import { Button } from "@/components/ui/button";
 
 const Footer = () => {
   return (
@@ -61,22 +60,6 @@ const Footer = () => {
           </p>
         </div>
       </address>
-      <div className="flex flex-col items-center justify-center gap-4 lg:flex-row">
-        <Button
-          className=" w-full rounded-full bg-teal-600 hover:bg-teal-500
-        "
-        >
-          PRIJAVI SE ONLINE
-        </Button>
-
-        <Link
-          href="tel:0213824417"
-          className=" flex  w-full items-center justify-center gap-2 rounded-full border border-teal-500 bg-teal-100 p-2 text-teal-500 transition ease-in-out hover:border-teal-600 hover:text-teal-600"
-        >
-          <Phone size={20} />
-          021 3824 417
-        </Link>
-      </div>
     </footer>
   );
 };
