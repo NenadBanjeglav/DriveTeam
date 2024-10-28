@@ -7,8 +7,9 @@ const Stats = () => {
   return (
     <div className="mx-auto mb-20 max-w-3xl px-4 md:mb-44">
       <h3 className="mb-12 text-center text-4xl font-semibold italic text-teal-600 md:text-6xl ">
-        Ponosni smo!
+        Uspesi koji nas inspirišu:
       </h3>
+
       <div className="flex flex-col items-center justify-center sm:flex-row">
         <Stat num={2} suffix="" subheading="Godina postojanja Drive Team-a" />
 

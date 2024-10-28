@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
+import { Phone } from "lucide-react";
 
 interface Korak {
   step: number;
@@ -78,8 +80,7 @@ const SteppedProgress = () => {
         Kako do vozačke dozvole?
       </h3>
       <p className="text-center text-lg leading-relaxed md:text-left md:text-xl">
-        Pripremi se za vozačku avanturu! Otkrij slobodu vožnje i postani pravi
-        vozač kroz ove uzbudljive korake.
+        Ovo su koraci koji te dele od vozačke dozvole i slobode na putu!
       </p>
       <div className="bg-gray-100">
         <div className="mx-auto w-full max-w-7xl  rounded-md bg-white p-8 shadow-lg">
@@ -94,18 +95,37 @@ const SteppedProgress = () => {
             </p>
           </div>
           <div className="flex items-center justify-center gap-2">
-            <button
-              className="rounded px-4 py-1 text-muted-foreground hover:bg-gray-100"
-              onClick={() => handleSetStep(-1)}
-            >
-              Nazad
-            </button>
-            <button
-              className="rounded bg-teal-600 px-4 py-1 text-white"
-              onClick={() => handleSetStep(1)}
-            >
-              Dalje
-            </button>
+            {stepsComplete === numSteps ? (
+              <div className="flex flex-col gap-4 md:flex-row">
+                <Link
+                  className="flex gap-4 rounded-2xl border-2 border-dashed border-black bg-white px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-0 active:translate-y-0 active:rounded-2xl active:shadow-none"
+                  href="tel:0213824417"
+                >
+                  <Phone size={24} className="text-black" /> 021 382 4417
+                </Link>
+                <Link
+                  className="rounded-2xl border-2 border-black bg-teal-500 px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-0 active:translate-y-0 active:rounded-2xl active:shadow-none"
+                  href="#contact"
+                >
+                  Prijavi se online
+                </Link>
+              </div>
+            ) : (
+              <>
+                <button
+                  className="rounded-2xl border-2 border-dashed border-black bg-white px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-0 active:translate-y-0 active:rounded-2xl active:shadow-none"
+                  onClick={() => handleSetStep(-1)}
+                >
+                  Nazad
+                </button>
+                <button
+                  className="rounded-2xl border-2 border-black bg-teal-500 px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-0 active:translate-y-0 active:rounded-2xl active:shadow-none"
+                  onClick={() => handleSetStep(1)}
+                >
+                  Dalje
+                </button>
+              </>
+            )}
           </div>
         </div>
       </div>

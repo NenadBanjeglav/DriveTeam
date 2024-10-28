@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import React from "react";
 import { Inter } from "next/font/google";
-import { ClerkProvider } from "@clerk/nextjs";
 import { ThemeProvider } from "next-themes";
 
 const inter = Inter({
@@ -16,7 +15,7 @@ export const metadata: Metadata = {
   description:
     "Postanite siguran vozač uz auto školu Drive Team iz Novog Sada. Nudimo profesionalne instruktore, fleksibilne časove i moderne vozila. Prijavite se danas i započnite svoju vozačku avanturu!",
   icons: {
-    icon: "/logo.svg",
+    icon: "/favicon.ico",
   },
 };
 
@@ -26,23 +25,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider
-      appearance={{
-        elements: {
-          formButtonPrimary: "primary-gradient",
-          footerActionLink: "primary-text-gradient hover:text-primary-500",
-        },
-      }}
-    >
-      <html lang="en" style={{ scrollBehavior: "smooth" }}>
-        <body
-          className={`${inter.variable} min-h-screen bg-gray-100 text-muted-foreground antialiased`}
-        >
-          <ThemeProvider attribute="class" defaultTheme="light">
-            {children}
-          </ThemeProvider>
-        </body>
-      </html>
-    </ClerkProvider>
+    <html lang="en" style={{ scrollBehavior: "smooth" }}>
+      <body
+        className={`${inter.variable} min-h-screen bg-gray-100 text-muted-foreground antialiased`}
+      >
+        <ThemeProvider attribute="class" defaultTheme="light">
+          {children}
+        </ThemeProvider>
+      </body>
+    </html>
   );
 }

@@ -76,7 +76,7 @@ export const StaggerTestimonials = () => {
   return (
     <section
       id="testimonials"
-      className="relative  flex min-h-[700px] w-full flex-col items-center overflow-hidden bg-gray-100"
+      className="relative  flex min-h-[700px] w-full flex-col items-center gap-12 overflow-hidden bg-gray-100"
       style={{
         height: SECTION_HEIGHT,
       }}
@@ -84,6 +84,10 @@ export const StaggerTestimonials = () => {
       <h3 className="text-center text-4xl font-semibold italic text-teal-600 md:text-left md:text-6xl">
         Šta kažu naši polaznici?
       </h3>
+      <p className="px-8 text-center text-lg leading-relaxed md:text-left md:text-xl">
+        Pogledaj šta su rekli naši polaznici i kreni i ti u avanturu koja menja
+        život!
+      </p>
       <div>
         {testimonials.map((t, idx) => {
           let position = 0;
@@ -105,7 +109,7 @@ export const StaggerTestimonials = () => {
             />
           );
         })}
-        <div className="absolute bottom-24 left-1/2 flex -translate-x-1/2 gap-8">
+        <div className="absolute bottom-0 left-1/2 flex -translate-x-1/2 gap-8">
           <button
             onClick={() => handleMove(-1)}
             className="grid size-14 place-content-center text-3xl transition-colors hover:bg-teal-700 hover:text-white"
@@ -149,8 +153,8 @@ const TestimonialCard = ({
       initial={false}
       onClick={() => handleMove(position)}
       className={`
-      absolute left-1/2 top-1/2 cursor-pointer border-black p-8 text-black transition-colors duration-500 ${
-        isActive ? "z-10 bg-teal-700" : "z-0 bg-white"
+      absolute left-1/2 top-[60%] cursor-pointer border-black p-8 text-black transition-colors duration-500 ${
+        isActive ? "z-10 bg-teal-600" : "z-0 bg-white"
       }
       `}
       style={{
@@ -214,65 +218,65 @@ const TESTIMONIAL_DATA = [
     tempId: 0,
     testimonial:
       "Sjajna škola! Instruktor Vladan mi je pomogao da se setim korišćenja manuelne transmisije nakon 10 godina. Hvala puno!",
-    by: "Nikolai Razguliaev, Učenik",
+    by: "Nikolai Razguliaev",
   },
   {
     tempId: 1,
     testimonial:
       "Prijateljska auto škola. Instruktori su strpljivi i prilagodili su se mom rasporedu. Topla preporuka!",
-    by: "Stevan Grbic, Učenik",
+    by: "Stevan Grbic",
   },
   {
     tempId: 2,
     testimonial:
       "Profesionalizam i odličan odnos sa kandidatima. Sve pohvale za predavača!",
-    by: "Jovan Pekic, Učenik",
+    by: "Jovan Pekic",
   },
   {
     tempId: 3,
     testimonial:
       "Auto škola koja nadmašuje očekivanja! Instruktor Boris je odličan i pruža sjajnu podršku.",
-    by: "Matrix Novi Sad, Učenik",
+    by: "Matrix Novi Sad",
   },
   {
     tempId: 4,
     testimonial:
       "Dugo nisam vozila, ali nakon nekoliko časova ponovo sam vozač! Sve najbolje!",
-    by: "Zorica Bojovic, Bivši učenik",
+    by: "Zorica Bojovic",
   },
   {
     tempId: 5,
     testimonial:
       "Najbolja auto škola! Instruktori su strpljivi, a atmosfera opuštena. Svaki čas bez kašnjenja.",
-    by: "Dario, Učenik",
+    by: "Dario",
   },
   {
     tempId: 6,
     testimonial:
       "Divan tim koji pruža osmeh! Milijana i Boris su odlični i puno pomažu.",
-    by: "Una Egelja, Učenik",
+    by: "Una Egelja",
   },
   {
     tempId: 7,
     testimonial:
       "Sve preporuke za Drive Team! Stručni i posvećeni instruktori. Bez stresa i sa razumevanjem.",
-    by: "Marijana Marković, Učenik",
+    by: "Marijana Marković",
   },
   {
     tempId: 8,
     testimonial: "Posvećen tim koji raste iz dana u dan. Sve pohvale momcima!",
-    by: "Nikola Zinic, Podrška",
+    by: "Nikola Zinic",
   },
   {
     tempId: 9,
     testimonial:
       "Pozitivan prvi utisak. Milijana i Boris su sjajni i pomogli su mi da vozim bez straha!",
-    by: "Dajana Kult, Učenik",
+    by: "Dajana Kult",
   },
   {
     tempId: 10,
     testimonial:
       "Najbolja auto škola! Brzo do dozvole uz zanimljive časove i odličnu podršku.",
-    by: "Stefan Vila, Učenik",
+    by: "Stefan Vila",
   },
 ];

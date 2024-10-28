@@ -3,13 +3,15 @@
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { FiCheckCircle, FiXSquare } from "react-icons/fi";
+import Link from "next/link";
+import { Phone } from "lucide-react";
 
 export const Pricing = () => {
   const [selected, setSelected] = useState(1);
   return (
     <section id="pricing" className="bg-gray-100 ">
       <section className="mx-auto max-w-7xl px-2 py-24 md:px-4">
-        <h2 className="mx-auto mb-4 max-w-2xl text-center text-4xl font-bold italic leading-[1.15] text-teal-600 md:text-6xl md:leading-[1.15]">
+        <h2 className="mx-auto mb-4 max-w-2xl text-center text-4xl font-bold italic leading-[1.15] text-teal-600 md:mb-20 md:text-6xl md:leading-[1.15]">
           Paketi i Cene
         </h2>
         <p className="text-center text-lg leading-relaxed md:text-xl">
@@ -68,7 +70,6 @@ export const Pricing = () => {
                 ? "63650 rsd"
                 : "47650 rsd"
             }
-            // "Sveobuhvatan kurs sa 40 časova teorije i 40 časova vožnje."
             statement={
               selected === 1
                 ? "Sveobuhvatan kurs sa 40 časova teorije i 40 časova vožnje."
@@ -156,7 +157,9 @@ const PriceColumn = ({
         boxShadow: highlight ? "0px 6px 0px rgb(24, 24, 27)" : "",
       }}
       className={`relative w-full rounded-lg p-6 md:p-8 ${
-        highlight ? "border-2 border-zinc-900 bg-white" : ""
+        highlight
+          ? "order-first border-2 border-zinc-900 bg-white md:order-none"
+          : ""
       }`}
     >
       {highlight && (
@@ -203,15 +206,17 @@ const PriceColumn = ({
         ))}
       </div>
 
-      <button
-        className={`w-full rounded-lg p-3 text-base uppercase text-white transition-colors ${
-          highlight
-            ? "bg-teal-600 hover:bg-teal-700"
-            : "bg-zinc-900 hover:bg-zinc-700"
-        }`}
-      >
-        Prijavi se online
-      </button>
+      <div className="flex flex-col gap-4">
+        <Link
+          className="flex items-center justify-center gap-4 rounded-2xl border-2 border-dashed border-black bg-white px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-0 active:translate-y-0 active:rounded-2xl active:shadow-none"
+          href="tel:0213824417"
+        >
+          <Phone size={24} className="text-black" /> 021 382 4417
+        </Link>
+        <button className="w-full rounded-lg border-2 border-black bg-teal-500 p-3 text-base font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-0 active:translate-y-0 active:rounded-2xl active:shadow-none">
+          Prijavi se online
+        </button>
+      </div>
     </div>
   );
 };
