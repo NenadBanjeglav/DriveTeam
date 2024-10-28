@@ -81,7 +81,7 @@ export const StaggerTestimonials = () => {
         height: SECTION_HEIGHT,
       }}
     >
-      <h3 className="text-center text-4xl font-semibold italic text-teal-600 md:text-left md:text-6xl">
+      <h3 className="px-8 text-center text-4xl font-semibold italic text-teal-600 md:text-left md:text-6xl">
         Šta kažu naši polaznici?
       </h3>
       <p className="px-8 text-center text-lg leading-relaxed md:text-left md:text-xl">
