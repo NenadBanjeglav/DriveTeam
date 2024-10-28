@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description:
     "Postanite siguran vozač uz auto školu Drive Team iz Novog Sada. Nudimo profesionalne instruktore, fleksibilne časove i moderne vozila. Prijavite se danas i započnite svoju vozačku avanturu!",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/logo.svg",
   },
 };
 
