@@ -54,7 +54,7 @@ const About = () => {
             width={600}
             height={600}
             alt="Slika direktora"
-            className="rounded-full object-cover shadow-2xl"
+            className="rounded-md object-cover shadow-2xl"
           />
         </div>
       </div>

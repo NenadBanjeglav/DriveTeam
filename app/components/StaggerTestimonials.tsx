@@ -18,7 +18,7 @@ const ROTATE_DEG = 2.5;
 const STAGGER = 15;
 const CENTER_STAGGER = -65;
 
-const SECTION_HEIGHT = 600;
+const SECTION_HEIGHT = 700;
 
 export const StaggerTestimonials = () => {
   const [cardSize, setCardSize] = useState(CARD_SIZE_LG);
