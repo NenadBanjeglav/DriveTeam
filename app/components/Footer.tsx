@@ -24,28 +24,30 @@ const Footer = () => {
             className="flex items-center gap-2 "
             href="https://www.google.com/maps/place/Auto+%C5%A0kola+-+Drive+Team/@45.2416609,19.7985495,15z/data=!4m6!3m5!1s0x475b11494ca5fa35:0x2001355c5b160bf4!8m2!3d45.2416609!4d19.7985495!16s%2Fg%2F11q9gxqqxl?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"
           >
-            <MapPin size={24} /> Bulevar patrijarha Pavla 111,Novi Sad 21000
+            <MapPin size={24} className="text-teal-500" /> Bulevar patrijarha
+            Pavla 111,Novi Sad 21000
           </Link>
 
           <p className="flex items-center gap-2 ">
-            <Clock size={24} /> Pon - Pet : 09.00 - 17.00
+            <Clock size={24} className="text-teal-500" /> Pon - Pet : 09.00 -
+            17.00
           </p>
 
           <Link
             href="mailto:as.driveteam@yahoo.com"
             className="flex items-center gap-2"
           >
-            <Mail size={24} />
+            <Mail size={24} className="text-teal-500" />
             as.driveteam@yahoo.com
           </Link>
 
           <Link href="tel:0668805100" className="flex items-center gap-2">
-            <Smartphone size={24} />
+            <Smartphone size={24} className="text-teal-500" />
             066 880 5100
           </Link>
 
           <Link href="tel:0213824417" className="flex items-center gap-2">
-            <Phone size={24} />
+            <Phone size={24} className="text-teal-500" />
             021 3824 417
           </Link>
 
@@ -53,7 +55,7 @@ const Footer = () => {
             href="https://www.instagram.com/autoskola.driveteam"
             className="flex items-center gap-2"
           >
-            <RxInstagramLogo size={24} />
+            <RxInstagramLogo size={24} className="text-teal-500" />
             Instagram
           </Link>
         </div>
