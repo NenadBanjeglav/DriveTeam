@@ -77,7 +77,7 @@ const SteppedProgress = () => {
       className="mx-auto flex w-full flex-col items-center justify-center gap-16 p-8 md:mb-24"
     >
       <h3 className="text-center text-4xl font-semibold italic text-teal-600 md:text-left md:text-6xl">
-        Kako do vozačke dozvole?
+        Kako do vozačke?
       </h3>
       <p className="text-center text-lg leading-relaxed md:text-left md:text-xl">
         Ovo su koraci koji te dele od vozačke dozvole i slobode na putu!
