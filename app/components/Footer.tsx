@@ -18,6 +18,7 @@ const Footer = () => {
           className="max-xl:w-56 md:w-36 xl:w-48"
         />
       </Link>
+
       <address>
         <div className="flex flex-col items-start justify-start gap-6 lg:flex-row lg:items-center lg:justify-center">
           <Link

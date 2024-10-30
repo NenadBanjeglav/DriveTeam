@@ -213,9 +213,12 @@ const PriceColumn = ({
         >
           <Phone size={24} className="text-black" /> 021 382 4417
         </Link>
-        <button className="w-full rounded-lg border-2 border-black bg-teal-500 p-3 text-base font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-0 active:translate-y-0 active:rounded-2xl active:shadow-none">
+        <Link
+          href="#contact"
+          className="flex w-full items-center justify-center rounded-lg border-2 border-black bg-teal-500 p-3 text-base font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-0 active:translate-y-0 active:rounded-2xl active:shadow-none"
+        >
           Prijavi se online
-        </button>
+        </Link>
       </div>
     </div>
   );

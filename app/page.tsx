@@ -9,6 +9,7 @@ import { StaggerTestimonials } from "./components/StaggerTestimonials";
 import Faq from "./components/Faq";
 import SteppedProgress from "./components/SteppedProgress";
 import { Pricing } from "./components/Pricing";
+import ContactForm from "./components/ContactForm";
 
 const HomePage = () => {
   return (
@@ -19,9 +20,10 @@ const HomePage = () => {
       <Stats />
       <StaggerTestimonials />
       <SteppedProgress />
-      <Faq />
       <About />
       <Pricing />
+      <Faq />
+      <ContactForm />
       <Footer />
     </>
   );
