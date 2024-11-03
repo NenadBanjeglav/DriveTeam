@@ -16,8 +16,8 @@ export async function sendContactEmail(values: ContactFormValues) {
 
   try {
     await resend.emails.send({
-      from: "Acme <onboarding@resend.dev>",
-      to: ["nenadmobmail@gmail.com"],
+      from: "whatever@autoskoladt.rs",
+      to: ["as.driveteam@yahoo.com"],
       subject: "Prijava za voznju",
       html: `
                 <p><strong>Name:</strong> ${name}</p>
