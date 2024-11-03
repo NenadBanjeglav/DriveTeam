@@ -4,7 +4,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import SuccessGif from "@/public/success.gif";
-
 import {
   Form,
   FormControl,
@@ -15,7 +14,6 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-
 import Image from "next/image";
 import { formSchema } from "../schema/formSchema";
 import { sendContactEmail } from "../actions";
@@ -45,7 +43,6 @@ const ContactForm = () => {
 
       if (result.success) {
         console.log("Email sent successfully!");
-
         setIsSent(true);
       } else {
         console.error("Failed to send email.");
@@ -62,7 +59,11 @@ const ContactForm = () => {
     >
       <div className="basis-2/4 p-4 py-8">
         {isSent ? (
-          <div className="flex flex-col items-center justify-center">
+          <div
+            className="flex flex-col items-center justify-center"
+            aria-live="polite"
+          >
+            {/* Accessibility: aria-live="polite" to announce success message to screen readers */}
             <Image
               src={SuccessGif}
               height={300}
@@ -100,10 +101,15 @@ const ContactForm = () => {
                             <Input
                               className="bg-teal-500 font-semibold text-white placeholder:font-medium placeholder:text-white"
                               placeholder="Tvoje Ime"
+                              aria-label="Unesite svoje ime" // Accessibility: Added aria-label for clear input description
                               {...field}
                             />
                           </FormControl>
-                          <FormMessage className="text-xs text-orange-400" />
+                          <FormMessage
+                            className="text-xs text-orange-400"
+                            aria-live="assertive"
+                          />
+                          {/* Accessibility: aria-live="assertive" for immediate error announcements */}
                         </FormItem>
                       )}
                     />
@@ -112,17 +118,21 @@ const ContactForm = () => {
                       name="email"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className=" hidden text-base text-white md:text-lg">
+                          <FormLabel className="hidden text-base text-white md:text-lg">
                             email...
                           </FormLabel>
                           <FormControl>
                             <Input
                               className="bg-teal-500 font-semibold text-white placeholder:font-medium placeholder:text-white"
                               placeholder="email@email.com"
+                              aria-label="Unesite svoj email" // Accessibility: Added aria-label for clear input description
                               {...field}
                             />
                           </FormControl>
-                          <FormMessage className="text-xs text-orange-400" />
+                          <FormMessage
+                            className="text-xs text-orange-400"
+                            aria-live="assertive"
+                          />
                         </FormItem>
                       )}
                     />
@@ -138,10 +148,14 @@ const ContactForm = () => {
                             <Input
                               className="bg-teal-500 font-semibold text-white placeholder:font-medium placeholder:text-white"
                               placeholder="Tvoj telefon"
+                              aria-label="Unesite svoj broj telefona" // Accessibility: Added aria-label for clear input description
                               {...field}
                             />
                           </FormControl>
-                          <FormMessage className="text-xs text-orange-400" />
+                          <FormMessage
+                            className="text-xs text-orange-400"
+                            aria-live="assertive"
+                          />
                         </FormItem>
                       )}
                     />
@@ -159,10 +173,11 @@ const ContactForm = () => {
                             <Textarea
                               placeholder="Ćao, reci nam nešto o sebi ili pitaj šta te zanima, a mi ćemo te nazvati čim pre"
                               className="h-fit bg-teal-500 font-semibold text-white placeholder:font-medium placeholder:text-white"
+                              aria-label="Poruka ili pitanje" // Accessibility: Added aria-label for clear input description
                               {...field}
                             />
                           </FormControl>
-                          <FormMessage />
+                          <FormMessage aria-live="assertive" />
                         </FormItem>
                       )}
                     />
@@ -172,11 +187,12 @@ const ContactForm = () => {
                   disabled={isSubmitting}
                   type="submit"
                   className="flex w-full items-center justify-center rounded-2xl border-2 border-black bg-teal-500 px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-0 active:translate-y-0 active:rounded-2xl active:shadow-none"
+                  aria-disabled={isSubmitting} // Accessibility: aria-disabled for accurate screen reader feedback on button state
                 >
                   {isSubmitting ? (
                     <Loader size={24} className="animate-spin" />
                   ) : (
-                    "Posalji prijavu"
+                    "Pošalji prijavu"
                   )}
                 </button>
               </form>
@@ -184,12 +200,12 @@ const ContactForm = () => {
           </>
         )}
       </div>
-      <div className="flex h-full  rounded-b-md xl:rounded-r-md">
+      <div className="flex h-full rounded-b-md xl:rounded-r-md">
         <Image
           src="/hero.jpg"
           width={1000}
           height={1000}
-          alt="Women Driving to Adventure Image"
+          alt="Žena vozi na avanturu"
           className="w-full rounded-b-md object-cover xl:rounded-r-md xl:rounded-bl-none"
         />
       </div>

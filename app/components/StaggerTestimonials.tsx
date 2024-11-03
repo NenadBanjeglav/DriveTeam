@@ -113,12 +113,14 @@ export const StaggerTestimonials = () => {
           <button
             onClick={() => handleMove(-1)}
             className="grid size-14 place-content-center text-3xl transition-colors hover:bg-teal-700 hover:text-white"
+            aria-label="Previous Testimonial"
           >
             <GoArrowLeft />
           </button>
           <button
             onClick={() => handleMove(1)}
             className="grid size-14 place-content-center text-3xl transition-colors hover:bg-teal-700 hover:text-white"
+            aria-label="Next Testimonial"
           >
             <GoArrowRight />
           </button>
@@ -187,33 +189,32 @@ const TestimonialCard = ({
           height: BORDER_SIZE,
         }}
       />
-      {/* <img
-        src={testimonial.imgSrc}
-        alt={`Testimonial image for ${testimonial.by}`}
-        className="mb-4 h-14 w-12 bg-neutral-600 object-cover object-top"
-        style={{
-          boxShadow: "3px 3px 0px white",
-        }}
-      /> */}
-      <h3
+
+      <blockquote
         className={`text-base sm:text-xl ${
           isActive ? "text-white" : "text-black"
         }`}
       >
         &quot;{testimonial.testimonial}&quot;
-      </h3>
-      <p
+      </blockquote>
+      <cite
         className={`absolute inset-x-8 bottom-8 mt-2 text-sm italic ${
           isActive ? "text-white" : "text-neutral-700"
         }`}
       >
         - {testimonial.by}
-      </p>
+      </cite>
     </motion.div>
   );
 };
 
-const TESTIMONIAL_DATA = [
+interface Testimonial {
+  tempId: number;
+  testimonial: string;
+  by: string;
+}
+
+const TESTIMONIAL_DATA: Testimonial[] = [
   {
     tempId: 0,
     testimonial:

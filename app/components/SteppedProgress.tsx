@@ -75,6 +75,7 @@ const SteppedProgress = () => {
     <section
       id="steps"
       className="mx-auto flex w-full flex-col items-center justify-center gap-16 p-8 md:mb-24"
+      aria-labelledby="steps-heading"
     >
       <h3 className="text-center text-4xl font-semibold italic text-teal-600 md:text-left md:text-6xl">
         Kako do vozačke?
@@ -86,7 +87,10 @@ const SteppedProgress = () => {
         <div className="mx-auto w-full max-w-7xl  rounded-md bg-white p-8 shadow-lg">
           <Steps numSteps={numSteps} stepsComplete={stepsComplete} />
 
-          <div className="my-6 h-fit  gap-4 rounded-lg border-2 border-dashed border-gray-200 bg-gray-100 p-4">
+          <div
+            className="my-6 h-fit  gap-4 rounded-lg border-2 border-dashed border-gray-200 bg-gray-100 p-4"
+            aria-live="polite"
+          >
             <h4 className="mb-8 text-center text-xl italic leading-relaxed text-teal-600 md:text-2xl">
               {koraci[stepsComplete].title}
             </h4>
@@ -100,12 +104,14 @@ const SteppedProgress = () => {
                 <Link
                   className="flex gap-4 rounded-2xl border-2 border-dashed border-black bg-white px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-0 active:translate-y-0 active:rounded-2xl active:shadow-none"
                   href="tel:0213824417"
+                  aria-label="Call driving school at 021 382 4417"
                 >
                   <Phone size={24} className="text-black" /> 021 382 4417
                 </Link>
                 <Link
                   className="rounded-2xl border-2 border-black bg-teal-500 px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-0 active:translate-y-0 active:rounded-2xl active:shadow-none"
                   href="#contact"
+                  aria-label="Register online"
                 >
                   Prijavi se online
                 </Link>
@@ -115,12 +121,14 @@ const SteppedProgress = () => {
                 <button
                   className="rounded-2xl border-2 border-dashed border-black bg-white px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-0 active:translate-y-0 active:rounded-2xl active:shadow-none"
                   onClick={() => handleSetStep(-1)}
+                  aria-label="Go to previous step"
                 >
                   Nazad
                 </button>
                 <button
                   className="rounded-2xl border-2 border-black bg-teal-500 px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-0 active:translate-y-0 active:rounded-2xl active:shadow-none"
                   onClick={() => handleSetStep(1)}
+                  aria-label="Go to next step"
                 >
                   Dalje
                 </button>
@@ -172,7 +180,13 @@ interface StepProps {
 
 const Step = ({ num, isActive }: StepProps) => {
   return (
-    <div className="relative">
+    <div
+      className="relative"
+      role="listitem"
+      tabIndex={isActive ? 0 : -1}
+      aria-current={isActive ? "step" : undefined}
+      aria-label={`Step ${num} ${isActive ? "(complete)" : "(incomplete)"}`}
+    >
       <div
         className={`relative z-10 flex size-4 shrink-0 items-center justify-center rounded-full border-2 text-sm font-semibold transition-colors duration-300 sm:size-6 md:size-10 ${
           isActive
@@ -195,6 +209,7 @@ const Step = ({ num, isActive }: StepProps) => {
               animate={{ rotate: 0, opacity: 1 }}
               exit={{ rotate: -180, opacity: 0 }}
               transition={{ duration: 0.125 }}
+              aria-hidden="true"
             >
               <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"></path>
             </motion.svg>

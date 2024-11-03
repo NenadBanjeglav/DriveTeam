@@ -10,12 +10,17 @@ const Faq = () => {
     <section
       id="faq"
       className="mb-20 mt-8 flex flex-col items-center justify-center px-4"
+      aria-labelledby="faq-heading" // Accessibility: add an aria label for the FAQ section
     >
-      <h3 className="mb-8 text-4xl font-semibold italic text-teal-600 md:mb-24 md:text-left md:text-6xl">
+      <h3
+        id="faq-heading"
+        className="mb-8 text-4xl font-semibold italic text-teal-600 md:mb-24 md:text-left md:text-6xl"
+      >
         Najčešća pitanja:
       </h3>
       <div className="mx-auto max-w-7xl">
-        <Question title="Šta je potrebno za upis u auto školu?" defaultOpen>
+        {/* Adding a list of questions for better structure */}
+        <Question title="Šta je potrebno za upis u auto školu?">
           Za upis u auto školu, kandidat mora da ima navršenih minimum 16 godina
           i važeću ličnu kartu. Kada napuniš 17 godina, možeš se pripremiti za
           uzbudljiv praktični ispit i zakoračiti u svet vožnje!
@@ -77,35 +82,29 @@ const Question = ({ title, children, defaultOpen = false }: QuestionProps) => {
       animate={open ? "open" : "closed"}
       className="border-b border-b-slate-300"
     >
+      {/* Accessibility: add aria-expanded and aria-controls to the button */}
       <button
         onClick={() => setOpen((pv) => !pv)}
+        aria-expanded={open} // Indicates whether the content is expanded
+        aria-controls={`answer-${title}`} // Links the button to the answer content
         className="flex w-full items-center justify-between gap-4 py-6"
       >
         <motion.span
           variants={{
-            open: {
-              color: "#009688",
-            },
-            closed: {
-              color: "#009688",
-            },
+            open: { color: "#009688" },
+            closed: { color: "#009688" },
           }}
           className="bg-gradient-to-r from-teal-600 to-teal-700 bg-clip-text text-left text-lg font-medium"
         >
+          {/* Wrapping title in h4 for semantic structure */}
           <h4 className="text-lg leading-relaxed md:text-left md:text-xl">
             {title}
           </h4>
         </motion.span>
         <motion.span
           variants={{
-            open: {
-              rotate: "180deg",
-              color: "#009688",
-            },
-            closed: {
-              rotate: "0deg",
-              color: "#009688",
-            },
+            open: { rotate: "180deg", color: "#009688" },
+            closed: { rotate: "0deg", color: "#009688" },
           }}
         >
           <FiChevronDown className="text-2xl" />
@@ -118,6 +117,7 @@ const Question = ({ title, children, defaultOpen = false }: QuestionProps) => {
           marginBottom: open ? "24px" : "0px",
         }}
         className="overflow-hidden text-muted-foreground"
+        id={`answer-${title}`} // Accessibility: adds id to answer content
       >
         <p
           className="text-lg leading-relaxed md:text-left md:text-xl"

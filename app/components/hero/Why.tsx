@@ -1,6 +1,6 @@
 "use client";
-import { useScroll, motion, useTransform } from "framer-motion";
-import { DollarSign, HelpCircle, Smile, Users } from "lucide-react";
+import { useScroll, motion, useTransform, MotionValue } from "framer-motion";
+import { DollarSign, HelpCircle, LucideIcon, Smile, Users } from "lucide-react";
 import React, { useRef } from "react";
 
 const CARD_HEIGHT = 600;
@@ -44,15 +44,27 @@ const CARDS = [
   },
 ];
 
-// @ts-ignore
-const Card = ({ position, card, scrollYProgress }) => {
+interface CardProps {
+  position: number;
+  card: {
+    id: number;
+    Icon: LucideIcon;
+    title: string;
+    description: string;
+    ctaClasses?: string;
+    routeTo: string;
+  };
+  scrollYProgress: MotionValue<number>; // Scroll progress value from Framer Motion
+}
+
+const Card = ({ position, card, scrollYProgress }: CardProps) => {
   const scaleFromPct = (position - 1) / CARDS.length;
   const y = useTransform(scrollYProgress, [scaleFromPct, 1], [0, -CARD_HEIGHT]);
 
   const isOddCard = position % 2;
 
   return (
-    <motion.div
+    <motion.article
       style={{
         height: CARD_HEIGHT,
         y: position === CARDS.length ? undefined : y,
@@ -60,28 +72,16 @@ const Card = ({ position, card, scrollYProgress }) => {
         color: isOddCard ? "#F5F5F5" : "#00897B",
       }}
       className="sticky top-0 flex w-full origin-top flex-col items-center justify-center px-4"
+      aria-labelledby={`card-title-${card.id}`}
     >
       <card.Icon className="mb-4 size-12" />
-      <h3 className="mb-6 text-center text-4xl font-semibold italic md:text-6xl">
+      <h2 className="mb-6 text-center text-4xl font-semibold italic md:text-6xl">
         {card.title}
-      </h3>
+      </h2>
       <p className="mb-8 max-w-lg text-center text-lg md:text-xl">
         {card.description}
       </p>
-      {/* <a
-        href={card.routeTo}
-        className={`flex items-center gap-2 rounded px-6 py-4 text-base font-medium uppercase text-black transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 md:text-lg ${
-          card.ctaClasses
-        } ${
-          isOddCard
-            ? "shadow-[4px_4px_0px_white] hover:shadow-[8px_8px_0px_white]"
-            : "shadow-[4px_4px_0px_black] hover:shadow-[8px_8px_0px_black]"
-        }`}
-      >
-        <span>Saznaj više</span>
-        <FiArrowRight />
-      </a> */}
-    </motion.div>
+    </motion.article>
   );
 };
 
@@ -102,7 +102,6 @@ const Why = () => {
             position={i + 1}
           />
         ))}
-        {/* <div className="h-screen bg-teal-700" /> */}
       </section>
     </>
   );

@@ -43,7 +43,7 @@ const Navbar = () => {
             className="flex items-center gap-2"
           >
             <MapPin size={16} className="text-teal-500" /> Bulevar patrijarha
-            Pavla 111,Novi Sad 21000
+            Pavla 111,Novi Sad
           </Link>
           <p className="flex items-center gap-2">
             <Clock size={16} className="text-teal-500" /> Pon - Pet : 09.00 -
@@ -82,7 +82,7 @@ const Navbar = () => {
         <Link href="/">
           <Image
             src={Logo}
-            alt="DriveTeam Logo"
+            alt="Auto Škola Drive Team Logo"
             className="max-xl:w-56 md:w-36 xl:w-48"
           />
         </Link>

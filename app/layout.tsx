@@ -4,12 +4,6 @@ import React from "react";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 
-const inter = Inter({
-  subsets: ["latin"],
-  weight: "variable",
-  variable: "--font-inter",
-});
-
 export const metadata: Metadata = {
   title: "DriveTeam Auto Skola",
   description:
@@ -17,7 +11,36 @@ export const metadata: Metadata = {
   icons: {
     icon: "/logo.svg",
   },
+  keywords: [
+    "auto škola",
+    "vozačka obuka",
+    "Novi Sad",
+    "sigurnost u vožnji",
+    "vozačka dozvola",
+  ],
+  openGraph: {
+    title: "DriveTeam Auto Skola",
+    description:
+      "Auto škola Drive Team u Novom Sadu – postanite sigurni vozač uz naše profesionalne instruktore i moderne metode obuke.",
+    url: "https://autoskoladt.rs",
+    images: [
+      {
+        url: "/hero.jpg",
+        width: 1200,
+        height: 600,
+        alt: "Drive Team Auto Škola",
+      },
+    ],
+    type: "website",
+  },
 };
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: "variable",
+  variable: "--font-inter",
+  display: "swap",
+});
 
 export default function RootLayout({
   children,
@@ -25,11 +48,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" style={{ scrollBehavior: "smooth" }}>
+    <html lang="sr" style={{ scrollBehavior: "smooth" }}>
       <body
         className={`${inter.variable} min-h-screen bg-gray-100 text-muted-foreground antialiased`}
       >
-        <ThemeProvider attribute="class" defaultTheme="light">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem={false}
+        >
           {children}
         </ThemeProvider>
       </body>

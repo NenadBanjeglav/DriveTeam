@@ -20,7 +20,7 @@ const Stats = () => {
         <Stat
           num={90}
           suffix="%"
-          subheading="Polozenih vozackih ispita iz prvog pokusaja!"
+          subheading="Položenih vozačkih ispita iz prvog pokušaja!"
         />
       </div>
     </div>
@@ -56,9 +56,12 @@ const Stat = ({ num, suffix, decimals = 0, subheading }: StatProps) => {
   }, [num, decimals, isInView, hasAnimated]);
 
   return (
-    <div className="flex w-72 flex-col items-center py-8 sm:py-0">
+    <div
+      className="flex w-72 flex-col items-center py-8 sm:py-0"
+      aria-label={`${num}${suffix} - ${subheading}`}
+    >
       <p className="mb-2 text-center text-7xl font-semibold text-teal-600 sm:text-6xl">
-        <span ref={ref}></span>
+        <span ref={ref} aria-live="polite"></span>
         {suffix}
       </p>
       <p className="max-w-48 text-center">{subheading}</p>
