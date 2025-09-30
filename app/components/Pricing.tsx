@@ -37,32 +37,17 @@ export const Pricing = () => {
           ))}
         </div>
 
-        <div className="mt-6 grid grid-cols-1 gap-6 lg:mt-12 lg:grid-cols-3 lg:gap-8">
-          <PriceColumn
-            title="Individualni Čas Teorije"
-            price="1200 rsd"
-            items={[
-              { children: "Potpuno prilagođen za tebe", checked: true },
-              { children: "Dublje razumevanje", checked: true },
-              { children: "Fokus na slabe tačke", checked: true },
-              {
-                children: "Intenzivna interakcija sa instruktorom",
-                checked: true,
-              },
-              { children: "Fleksibilni termini", checked: true },
-            ]}
-          />
-
+        <div className="mt-6 grid grid-cols-1 gap-6 lg:mt-12 lg:grid-cols-2 lg:gap-8">
           <PriceColumn
             title="Teorija i Praksa - Ceo Paket"
             price={
               selected === 1
-                ? "90000 rsd"
+                ? "108.000 rsd"
                 : selected === 2
-                ? "71650 rsd"
+                ? "80.580 rsd"
                 : selected === 3
-                ? "63650 rsd"
-                : "47650 rsd"
+                ? "70.980 rsd"
+                : "51.780 rsd"
             }
             statement={
               selected === 1
@@ -91,7 +76,7 @@ export const Pricing = () => {
 
           <PriceColumn
             title="Kondiciona Vožnja"
-            price="3200 rsd"
+            price="4.000 rsd"
             items={[
               { children: "Personalizovani plan", checked: true },
               { children: "Fokus na slabe tačke", checked: true },
